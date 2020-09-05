@@ -1,0 +1,7 @@
+#+TITLE: Readme
+
+* Notes on Topology
+
+Notes on the lectures from the course Introduction to Topology from University of Porto.
+
+Feedback and corrections are welcome.
