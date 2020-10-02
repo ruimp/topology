@@ -37,56 +37,56 @@ In topology, the union of potentially infinite (and uncountable) subsets. We wri
 
 \begin{definition}
   \label{def:topology}
-  Given a non-empty set $X$, we say $\Tau \subseteq \mathcal{P}(X)$ is a {\bf topology} on $X$ if:
+  Given a non-empty set $X$, we say $\Top \subseteq \mathcal{P}(X)$ is a {\bf topology} on $X$ if:
   \begin{enumerate}
-      \item $X, \emptyset \in \Tau$
-      \item if $A, B \in \Tau$ then $A \cap B \in \Tau$
-      \item if $A_{i} \in \Tau$ for all $i \in I$, then $\bigcup_{i \in I} A_{i} \in \Tau$.
+      \item $X, \emptyset \in \Top$
+      \item if $A, B \in \Top$ then $A \cap B \in \Top$
+      \item if $A_{i} \in \Top$ for all $i \in I$, then $\bigcup_{i \in I} A_{i} \in \Top$.
   \end{enumerate}
-  Then $(X, \Tau)$ is a {\bf topological space}, and the elements of $X$ sometimes denotes by points.
+  Then $(X, \Top)$ is a {\bf topological space}, and the elements of $X$ sometimes denotes by points.
 \end{definition}
 
 \begin{remark}
-  For a finite family of subsets $N$, the reunion $\bigcap_{i \in N} A_{i} \in \Tau$.
+  For a finite family of subsets $N$, the reunion $\bigcap_{i \in N} A_{i} \in \Top$.
 \end{remark}
 \begin{proof}
-  The case for $n = 2$ is taken care by the second axiom in \ref{def:topology}. Assume $\bigcap_{i=1}^{n} A_{i} = B \in \Tau$. Then
+  The case for $n = 2$ is taken care by the second axiom in \ref{def:topology}. Assume $\bigcap_{i=1}^{n} A_{i} = B \in \Top$. Then
   \begin{equation*}
-    \bigcap_{i=1}^{n+1} A_{i} = \left(  \bigcap_{i=1}^{n} A_{i} \right) \cap A_{n+1} = B \cap A \in \Tau
+    \bigcap_{i=1}^{n+1} A_{i} = \left(  \bigcap_{i=1}^{n} A_{i} \right) \cap A_{n+1} = B \cap A \in \Top
   \end{equation*}
   so the statement holds by induction.
 \end{proof}
 
 \begin{example}
-  Let $X_{1} = \left\{ a, b, c, d, e, f \right\}$ and $\Tau_{1} = \left\{ X_{1}, \emptyset, \{a\}, \{c, b\}, \{a, c, d\}, \{b, c, d, e, f\} \right\}$. Then $\Tau_{1}$ is a topology on $X_{1}$.
+  Let $X_{1} = \left\{ a, b, c, d, e, f \right\}$ and $\Top_{1} = \left\{ X_{1}, \emptyset, \{a\}, \{c, b\}, \{a, c, d\}, \{b, c, d, e, f\} \right\}$. Then $\Top_{1}$ is a topology on $X_{1}$.
 \end{example}
 
 \begin{remark}
-  For a finite set $X$, one does enough to test the union of each two subsets of $\Tau$, and the finite union follows by induction.
+  For a finite set $X$, one does enough to test the union of each two subsets of $\Top$, and the finite union follows by induction.
 \end{remark}
 
 \begin{example}
-  Let $X = \{a, b, c, d\}$ and $\Tau_{2} = \left\{ X_{2}, \emptyset, \{a\}, \{c, d\}, \{a, c\}, \{a, c, d\} \right\}$. Then $\Tau_{2}$ is not a topology on $X_{2}$, for $\{a\} \cap \{a, c\} = \{c\} \notin \Tau$.
+  Let $X = \{a, b, c, d\}$ and $\Top_{2} = \left\{ X_{2}, \emptyset, \{a\}, \{c, d\}, \{a, c\}, \{a, c, d\} \right\}$. Then $\Top_{2}$ is not a topology on $X_{2}$, for $\{a\} \cap \{a, c\} = \{c\} \notin \Top$.
 \end{example}
 
 \begin{example}
-  Let $\Tau_{3} \subseteq \mathcal{P}(\mathbb{N})$ be such that
+  Let $\Top_{3} \subseteq \mathcal{P}(\mathbb{N})$ be such that
   \begin{equation*}
-    \Tau_{3} = \{\mathbb{N}\} \cup \left\{ A \subseteq \mathbb{N} : A \text{ is finite} \right\}.
+    \Top_{3} = \{\mathbb{N}\} \cup \left\{ A \subseteq \mathbb{N} : A \text{ is finite} \right\}.
   \end{equation*}
-  $\Tau_{3}$ is not a topology on $\mathbb{N}$. Let $B_{n} = \{2 n + 1\}$ for $n \in \mathbb{N}$. Then $B_{n} \in \Tau_{3}$ but
+  $\Top_{3}$ is not a topology on $\mathbb{N}$. Let $B_{n} = \{2 n + 1\}$ for $n \in \mathbb{N}$. Then $B_{n} \in \Top_{3}$ but
   \begin{equation*}
-    \bigcup_{n = 1}^{\infty} B_{n} \notin \Tau_{3}.
+    \bigcup_{n = 1}^{\infty} B_{n} \notin \Top_{3}.
   \end{equation*}
 \end{example}
 
 \begin{definition}
   \label{def:discrete-topology}
-  Let  $X$ be a non-empty set. Then $\Tau = \mathcal{P}(X)$ is a topology on $X$, called the {\bf discrete topology}.
+  Let  $X$ be a non-empty set. Then $\Top = \mathcal{P}(X)$ is a topology on $X$, called the {\bf discrete topology}.
 \end{definition}
 
 \begin{remark}
-  Let $(X, \Tau)$ be a topological space. Then $\Tau$ is the discrete topology if and only if $\{x\} \in \Tau$ for all $x \in X$. These are called the {\bf singular sets} of $X$.
+  Let $(X, \Top)$ be a topological space. Then $\Top$ is the discrete topology if and only if $\{x\} \in \Top$ for all $x \in X$. These are called the {\bf singular sets} of $X$.
 \end{remark}
 \begin{proof}
   Take $A \in \mathcal{P}(X)$ and let $x_{i}$ for $i \in I$ be elements of $X$. If $A$ is empty then it is simply the {\bf empty union} of singleton sets. Otherwise, it implies that there does not exist a union such that
@@ -98,24 +98,24 @@ In topology, the union of potentially infinite (and uncountable) subsets. We wri
 
 \begin{definition}
   \label{def:indiscrete-topology}
-  Let $X$ be a non empty set. Then $\Tau = \{X, \emptyset \}$ is a topology of $X$, called the {\bf indiscrete topology}.
+  Let $X$ be a non empty set. Then $\Top = \{X, \emptyset \}$ is a topology of $X$, called the {\bf indiscrete topology}.
 \end{definition}
 
 \section{Open and Closed subsets}
 \label{sec:open-closed-subsets}
 
 \begin{definition}
-  Given a topological space $(X, \Tau)$, the elements of $\Tau$ are called {\bf open} subsets of $X$.
+  Given a topological space $(X, \Top)$, the elements of $\Top$ are called {\bf open} subsets of $X$.
 \end{definition}
 
 \begin{definition}
-  Given a topological space $(X, \Tau)$, a subset $A \in X$ is called {\bf closed} if $X \setminus A \in \Tau$.
+  Given a topological space $(X, \Top)$, a subset $A \in X$ is called {\bf closed} if $X \setminus A \in \Top$.
 \end{definition}
 
 \subsection{Properties of closed subsets}
 \label{sec:prop-closed-subsets}
 
-In a topological space $X, \Tau$:
+In a topological space $X, \Top$:
 \begin{itemize}
     \item $X$ and $\emptyset$ are closed
     \item the intersection of finitely many closed subsets is closed
@@ -129,27 +129,27 @@ In a topological space $X, \Tau$:
 \begin{example}
   Let $X$ be a non-empty set. The family of subsets
   \begin{equation*}
-    \Tau = \{ \emptyset \} \cup \{A \subseteq X: X \setminus A \text{ is finite}\}
+    \Top = \{ \emptyset \} \cup \{A \subseteq X: X \setminus A \text{ is finite}\}
   \end{equation*}
-  are a topology on $X$, called the {\bf cofinite topology}. The closed sets of $\Tau$ are $X$ and its finite subsets.
+  are a topology on $X$, called the {\bf cofinite topology}. The closed sets of $\Top$ are $X$ and its finite subsets.
 \end{example}
 
 \begin{proof}
-  We have that $\emptyset$ and $X \in \Tau$.
+  We have that $\emptyset$ and $X \in \Top$.
 
   Let $A, B \in X$. If $A$ or $B$ are empty the intersection is trivial. Otherwise
 
   \begin{equation*}
     X \setminus (A \cap B) = \left( X \setminus A \right) \cup \left( X \setminus B \right)
   \end{equation*}
-  is finite because $X \setminus A$ and $X \setminus B$ are finite, therefore $A \cap B \in \Tau$.
+  is finite because $X \setminus A$ and $X \setminus B$ are finite, therefore $A \cap B \in \Top$.
 
-  Let $A_{i} \in \Tau$ for $i \in I$. Then
+  Let $A_{i} \in \Top$ for $i \in I$. Then
   \begin{equation*}
     X \setminus \left( \bigcup_{i \in I} A_{i} \right) =
     \bigcap_{i \in I} \left( X \setminus A_{i} \right)
   \end{equation*}
-  is contained in $\Tau$, as the intersection of finite sets is finite.
+  is contained in $\Top$, as the intersection of finite sets is finite.
 \end{proof}
 
 \section{Functions}
@@ -164,21 +164,21 @@ Let $f: X \rightarrow Y$ be a function. Given $A \subseteq Y$, we define {\bf re
 \end{definition}
 
 \begin{remark}
-The reciprocal image allows for the introduction of a topology on $X$ from a given topology on $Y$. Let $f: X \rightarrow Y$ be a function with $X \neq \emptyset$. If $\Tau$ is a topology on $Y$, then
+The reciprocal image allows for the introduction of a topology on $X$ from a given topology on $Y$. Let $f: X \rightarrow Y$ be a function with $X \neq \emptyset$. If $\Top$ is a topology on $Y$, then
   \begin{equation*}
-    \Tau' = \{f^{-1}(A) : A \in \Tau\}
+    \Top' = \{f^{-1}(A) : A \in \Top\}
   \end{equation*}
   is a topology on $X$.
 \end{remark}
 
 \begin{proof}
-  Because $\Tau$ is a topology on $Y$, we know that $\emptyset, Y \in \Tau$. Then $f^{-1}(\emptyset) \in \Tau'$ and $f^{-1}(Y) \in \Tau'$.
+  Because $\Top$ is a topology on $Y$, we know that $\emptyset, Y \in \Top$. Then $f^{-1}(\emptyset) \in \Top'$ and $f^{-1}(Y) \in \Top'$.
 
-  Let $A, B \in \Tau$. Hence $f^{-1}(A) \cap f^{-1}(B) = f^{-1} ( A \cap B ) \in \Tau'$.
+  Let $A, B \in \Top$. Hence $f^{-1}(A) \cap f^{-1}(B) = f^{-1} ( A \cap B ) \in \Top'$.
 
-  Let $A_{i} \in \Tau$ for $i \in I$ be an arbitrary family of subsets of $Y$. We shall now prove that
+  Let $A_{i} \in \Top$ for $i \in I$ be an arbitrary family of subsets of $Y$. We shall now prove that
   \begin{equation*}
-    \bigcup_{i \in I} f^{-1}(A_{i}) = f^{-1} \left( \bigcup_{i \in I} A_{i} \right) \in \Tau'
+    \bigcup_{i \in I} f^{-1}(A_{i}) = f^{-1} \left( \bigcup_{i \in I} A_{i} \right) \in \Top'
   \end{equation*}
   to conclude the proof.
 
@@ -194,7 +194,7 @@ The reciprocal image allows for the introduction of a topology on $X$ from a giv
 \end{proof}
 
 \begin{remark}
-  Inheriting a topology in the reverse manner, that is, $\Tau' = \{f(A) : A \in \Tau\}$ does not work, even if $f$ is surjective.
+  Inheriting a topology in the reverse manner, that is, $\Top' = \{f(A) : A \in \Top\}$ does not work, even if $f$ is surjective.
 \end{remark}
 
 \begin{example}
@@ -202,9 +202,9 @@ The reciprocal image allows for the introduction of a topology on $X$ from a giv
   \begin{equation*}
     a \mapsto 1 \quad \quad b \mapsto 2 \quad \quad c \mapsto 3 \quad \quad d \mapsto 1
   \end{equation*}
-  and $\Tau = \{ X, \emptyset, \{a, b\}, \{c, d\} \}$ on $X$. We notice that $\{1, 2\}, \{1, 3\} \in \Tau$ and
+  and $\Top = \{ X, \emptyset, \{a, b\}, \{c, d\} \}$ on $X$. We notice that $\{1, 2\}, \{1, 3\} \in \Top$ and
   \begin{equation*}
-    \{1, 2\} \cap \{1, 3\} = \{1\} \notin \Tau'.
+    \{1, 2\} \cap \{1, 3\} = \{1\} \notin \Top'.
   \end{equation*}
 \end{example}
 
@@ -212,7 +212,7 @@ The reciprocal image allows for the introduction of a topology on $X$ from a giv
 \label{sec:axioms-of-separation}
 
 \begin{definition}
-  A topological space $(X, \Tau)$ is $\mathrm{T}_{0}$ if, given two distinct points $a, b \in X$, there exists an open subset that contains only one of them.
+  A topological space $(X, \Top)$ is $\mathrm{T}_{0}$ if, given two distinct points $a, b \in X$, there exists an open subset that contains only one of them.
 \end{definition}
 
  Notice that:
@@ -222,7 +222,7 @@ The reciprocal image allows for the introduction of a topology on $X$ from a giv
 \end{itemize}
 
 \begin{definition}
-  A topological space $(X, \Tau)$ is $\mathrm{T}_{1}$ if, given two distinct points $a, b \in X$, there exists an open subset that contains $a$ but not $b$.
+  A topological space $(X, \Top)$ is $\mathrm{T}_{1}$ if, given two distinct points $a, b \in X$, there exists an open subset that contains $a$ but not $b$.
 \end{definition}
 
 \begin{remark}
@@ -230,17 +230,17 @@ The reciprocal image allows for the introduction of a topology on $X$ from a giv
 \end{remark}
 
 \begin{example}
-  Let $X = \{a, b\}$ and $\Tau = \{X, \emptyset, \{a\}\}$. Then $(X, \Tau)$ is $\mathrm{T}_{0}$ but not $\mathrm{T}_{1}$, because there does not exist an open subset of $X$ that contains $b$ but not $a$.
+  Let $X = \{a, b\}$ and $\Top = \{X, \emptyset, \{a\}\}$. Then $(X, \Top)$ is $\mathrm{T}_{0}$ but not $\mathrm{T}_{1}$, because there does not exist an open subset of $X$ that contains $b$ but not $a$.
 \end{example}
 
 \begin{theorem}
-  A topological space $(X, \Tau)$ is $\mathrm{T}_{1}$ if and only if every singular subset of $X$ is closed.
+  A topological space $(X, \Top)$ is $\mathrm{T}_{1}$ if and only if every singular subset of $X$ is closed.
 \end{theorem}
 
 \begin{proof}
-  Assume that every singular subset of $X$ is closed. Take $a, b \in X$. We have that $\{b\}$ is closed, therefore $X \setminus \{b\}$ is open and contains $a$, hence the $(X, \Tau)$ is $\mathrm{T}_{1}$.
+  Assume that every singular subset of $X$ is closed. Take $a, b \in X$. We have that $\{b\}$ is closed, therefore $X \setminus \{b\}$ is open and contains $a$, hence the $(X, \Top)$ is $\mathrm{T}_{1}$.
 
-  Assume now that $(X, \Tau)$ is $\mathrm{T}_{1}$. Then for every point $y$ in $X \setminus \{x\}$ there exists an open subset $A_{y}$ that does not contain $x$. Thus the reunion
+  Assume now that $(X, \Top)$ is $\mathrm{T}_{1}$. Then for every point $y$ in $X \setminus \{x\}$ there exists an open subset $A_{y}$ that does not contain $x$. Thus the reunion
   \begin{equation*}
     \bigcup_{y \in X \setminus \{x\}} A_{y} = X \setminus \{x\}
   \end{equation*}

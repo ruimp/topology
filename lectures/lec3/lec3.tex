@@ -1,0 +1,139 @@
+\documentclass[../../main/main.tex]{subfiles}
+
+\begin{document}
+\chapter{29/09/2020}
+\label{cpt:lec3}
+
+\section{Basis of Topology}
+\label{sec:basis}
+
+\begin{definition}
+  Let $X$ be a nonempty set and $B \subseteq \mathcal{P}(X)$. Then $\mathcal{B}$ is the basis of some topology on $X$ if and only if:
+  \begin{enumerate}
+    \item $X = \bigcup_{B_i \in \mathcal{B}} B_{i}$
+    \item for all $B_i, B_j \in \mathcal{B}$ implies that $B_{i} \cap B_{j} \in \mathcal{B}$.
+  \end{enumerate}
+\end{definition}
+
+\begin{proof}
+  Let $X$ be a nonempty set. Suppose that $\mathcal{B}$ is a basis of a topology $\Top$ on $X$. Then $X$ is a union of members of B, hence $X=\bigcup_{B\in\mathcal{B}} B$. Additionally let $B_{i}, B_{j} \in \mathcal{B} \subseteq \Top$ then the intersection is in $\Top$ and therefore a union of members of $\mathcal{B}$.
+  Now assume that $\mathcal{B}$ generates some topology $\Top$, that $X = \bigcup_{B \in \mathcal{B}} B$ and the union of subsets of $\mathcal{B}$ is in $\mathcal{B}$. Then
+  \begin{enumerate}
+    \item $X$, $\emptyset$ are a union of subsets of $\mathcal{B}$, hence in $\Top$.
+    \item Let $A, B \in \Top$. We have that for some families of elements of $\mathcal{B}$ that $A=\bigcup_{i \in I}B_{i}$ and $B=\bigcup_{j \in J}B_{j}$. Then
+      \begin{equation*}
+        A \cap B = \left( \bigcup_{i \in I}B_{i} \right) \cap \left( \bigcup_{j \in J}B_{j} \right) = \bigcup_{i \in I} \bigcup_{j \in J} \left( B_{i} \cap B_{j} \right) \in \Top
+      \end{equation*}
+    \item The union of subsets of $\Top$ translates to the union of unions of subsets of $\mathcal{B}$, and therefore a union of subsets of $\mathcal{B}$.
+  \end{enumerate}
+\end{proof}
+
+\begin{definition}
+  Let $\mathcal{B}$ be the set of rectangles of the form $(a_{1}, b_{1}) \times (a_{2}, b_{2})$, with $a_{i}, b_{i} \in \mathbb{R}$ and $a_{i} < b_{i}$ for $i \in \{1, 2\}$.
+\end{definition}
+
+\begin{remark}
+Notice that the union of all these rectangles is the $\mathbb{R}$ plane and that the intersection of rectangles is either empty or also a rectangle. Therefore $\mathcal{B}$ is the basis for some topology in $\mathbb{R}^{2}$. This is the {\bf euclidean topology} in $\mathbb{R}^{2}$.
+\end{remark}
+
+This procedure is analogous to generate the euclidean topology in $\mathbb{R}^{n}$.
+
+\begin{definition}
+  \label{def:topology-given-X}
+  Let $(X, \Top)$ be a topological space and let $\mathcal{B} \in \mathcal{P}(X)$. Then $\mathcal{B}$ is a basis of $\Top$ if and only if
+  \begin{enumerate}
+    \item $B \subseteq \Top$
+    \item for all $A \in \Top$ and $a \in A$,  there exists some $B \in \mathcal{B}$ such that $a \in B \subseteq A$.
+  \end{enumerate}
+\end{definition}
+\begin{proof}
+  Let $(X, \Top)$ be a topological space and $\mathcal{B} \subseteq \mathcal{P}(X)$. Assume that $\mathcal{B}$ is a basis of $\Top$. Then obviously $B \subseteq \Top$. Every set $A \in \Top$ is a union of elements of $\mathcal{B}$. Thus for an element $a \in A$ there exists some $B_{j}$ in $\mathcal{B}$ such that $a \in B_{j} \subseteq A$.
+ 
+  Now assume that $B \subseteq \Top$ and that for every element $a \in A$, there exists some $B \in \mathcal{B}$ such that $a \in B \subseteq A$. We must show that every element of $\Top$ is a union of members of $B$. Take any subset $A \in \Top$. Then for every element $a \in A$ we find a subset $B_{a} \in \mathcal{B}$ contained in $A$ that contains $a$. Hence $A = \bigcup_{a \in A} a \subseteq \bigcup_{a \in A} B_{a} \subseteq A$, therefore $A = \bigcup_{a \in A} B_{a}$.
+\end{proof}
+
+\begin{definition}
+  Let $X$ be a nonempty set. Let $\mathcal{B}$ and $\mathcal{B'}$ be basis of $X$. Then we say $\mathcal{B}$ and $\mathcal{B'}$ are {\bf equivalent basis} if they generate the same topology.
+\end{definition}
+
+Let $\mathcal{B}$ and $\mathcal{B'}$ be basis of topologies on a nonempty set. These are equivalent if and only if
+
+\begin{enumerate}
+  \item for all $B \in \mathcal{B}$ and element $b \in B$ there exists some $B' \in \mathcal{B'}$ such that $b \in B' \subseteq B$
+  \item for all $B' \in \mathcal{B'}$ and element $b' \in B'$ there exists some $B \in \mathcal{B}$ such that $b' \in B \subseteq B'$.
+\end{enumerate}
+\begin{proof}
+  The direct consequence follows from the application of definition \ref{def:topology-given-X}. Assume now that $\mathcal{B}$ and $\mathcal{B'}$ generate topologies $\Top$ and $\Top'$, respectively. Take an element $a \in A \subseteq \Top$, then $b \in B_{a}$ for some $B_{a} \in \mathcal{B}$. From the the aforementioned conditions if follows that there exists some $B'_{a}$ such that $a \in B'_{a} \subseteq B_{a}$. Then we have that
+  \begin{equation*}
+    A = \bigcup_{a \in A} a \subseteq \bigcup_{a \in A} B'_{a} \subseteq \bigcup_{a \in A} B_{a} = A
+  \end{equation*}
+  which implies that any subset $A \in \Top$ is a union of subsets $B' \in \mathrm{B'}$, that is, $\Top \subseteq \Top'$. Applying the same argument switching $\Top$ and $\Top'$ we conclude the proof.
+\end{proof}
+
+\begin{remark}
+ It is important to remember that to show that some family of subsets $\mathcal{B}$ is a basis a given topological space, then one must check that $\mathcal{B}$ is a basis of a topology, and then that that topology is the one topology one is analyzing.
+\end{remark}
+
+\begin{remark}
+  In general, topologies are not countable. For example, the euclidean topology on $\mathbb{R}$ is not countable. But a non countable topology may admit a countable basis. If this is the case, we say that the topological space obeys the {\bf second axioms of countability}.
+\end{remark}
+
+\begin{example}
+  $\mathcal{B} = \{ (p, q) : p, q \in \mathbb{Q}\}$ is a countable basis of the euclidean topology on $\mathbb{R}$.
+\end{example}
+
+\section{Subbasis of Topology}
+\label{sec:subbasis}
+
+\begin{theorem}
+  Let $X$ be a nonempty set. For all $\lambda \in \Lambda$, let $\Top_{\lambda}$ be a topology on $X$. Then
+    $\bigcap_{\lambda \in \Lambda} \Top_{\lambda}$ is a topology on $X$.
+\end{theorem}
+\begin{proof}
+  Take $X$ as nonempty set and $\Top_{\lambda}$ a topology on $X$ for every $\lambda \in \Lambda$.
+  \begin{enumerate}
+    \item $X, \emptyset \in \Top_{\lambda}$ for all $\lambda \in \Lambda$, so they are contained in the intersection.
+    \item Let $A, B \in \bigcap_{\lambda \in \Lambda} \Top_{\lambda}$. Therefore $A, B \in \Top_{\lambda}$ for all $\lambda \in \Lambda$. As such, the intersection $A \cap B \in \Top_{\lambda}$ for each $\Top_{\lambda}$, hence $A\cap B \in \bigcap_{\lambda \in \Lambda} \Top_{\lambda}$.
+    \item Take a family open sets $A_{i} \in \bigcap_{\lambda \in \Lambda} \Top_{\lambda}$ for $i \in I$. Then, each $A_{i}$ is contained in each $\Top_{\lambda}$ and by the axioms of a topology, the arbitrary union $\bigcup_{i \in I} A_{i}$ is too. Thus $\bigcup_{i \in I} A_{i} \in \bigcap_{\lambda \in \Lambda} \Top_{\lambda}$.
+  \end{enumerate}
+\end{proof}
+
+\begin{definition}
+  Let $X$ be a nonempty set and $\mathcal{S} \in \mathcal{P}(X)$. We define $\Top_{\mathcal{S}}$ as the intersection of all topologies on $X$ that contain $\mathcal{S}$. This is the smallest topology on $X$ that contains $\mathcal{S}$.
+\end{definition}
+
+\begin{remark}
+  The discrete topology is always one of these topologies, therefore $\Top_{\mathcal{S}}$ is well defined.
+\end{remark}
+
+\begin{definition}
+  Let $\Top$ and $\Top'$ be topologies on $X$ such that $\Top' \subseteq \Top$. Then we say that $\Top$ is a {\bf finer} topology on $X$ than $\Top'$ or, inversely, that $\Top'$ is {\bf coarser} than $\Top$.
+\end{definition}
+
+Additionally, one may say that $\Top_{\mathcal{S}}$ is the topology generated by $\mathcal{S}$ on $X$.
+
+\begin{definition}
+  Let $X$ be a nonempty set and $\mathcal{S} \subseteq \mathcal{P}(X)$. Then
+  \begin{equation*}
+    \mathcal{B} = \{ X \} \cup \left\{ \bigcap_{j=1}^{n} A_{j} : n \geq 1, A_{j} \in \mathcal{S} \right\}
+  \end{equation*}
+  is a basis for $\Top_{\mathcal{S}}$.
+\end{definition}
+\begin{proof}
+  Obviously, every $A_{i} \in \mathcal{S} \subseteq \Top_{\mathcal{S}}$, hence $\bigcap_{j=1}^{n}A_{j} \in \Top_{\mathcal{S}}$. Additionally, $X \in \Top_{\mathcal{S}}$, hence $\mathcal{B} \subseteq \Top_{\mathcal{S}}$. This implies that $\mathcal{B}$ is a basis for some topology on $X$.
+
+  We shall now prove that the topology $\Top$ generated by $\mathcal{B}$ is equal to $\Top_{\mathcal{S}}$. By considering one element intersections, we have that $\mathcal{S} \subseteq\Top$. Hence the definition of $\Top_{\mathcal{S}}$, it follows that $\Top_{\mathcal{S}} \subseteq \Top$. On the other hand, we have that $B \subseteq \Top_{\mathcal{S}}$, so $\Top \subseteq \Top_{\mathcal{S}} $. Thus $\Top = \Top_{\mathcal{S}}$.
+\end{proof}
+
+\begin{definition}
+  Let $(X, \Top)$ be a topological space. We say $\mathcal{S} \in \mathcal{P}(X)$ is a {\bf subbasis} of $\Top$ if $\Top = \Top_{\mathcal{S}}$.
+\end{definition}
+
+\begin{example}
+  We have that $\mathcal{S} = \left\{ (-\infty, a) : a \in \mathbb{R} \right\} \cup \left\{ (b, \infty) : b \in \mathbb{R} \right\} $ is a basis for the euclidean topology on $\mathbb{R}$.
+\end{example}
+\begin{proof}
+  Notice that the intersection of elements $(-\infty, a) \cap (b, \infty) = (a, b)$ which generate the euclidean topology on $\mathbb{R}$.
+\end{proof}
+
+\end{document}
