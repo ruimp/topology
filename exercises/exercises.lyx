@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass exam
+\textclass ../../../.lyx/layouts/exam
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -685,11 +685,9 @@ Let there be a family of subsets
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\end_deeper
-\end_deeper
-\begin_layout Standard
 We take the chance to prove that 
 \begin_inset Formula $\bigcup_{i\in I}\left(-r_{i},r_{i}\right)=\left(-\sup\left(r_{i}\right),\sup\left(r_{i}\right)\right).$
 \end_inset
@@ -764,5 +762,469 @@ r\in\left(-r_{j},r_{j}\right)\subseteq\left(-\sup\left(r_{i}\right),\sup\left(r_
 
 \end_layout
 
+\end_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{3}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left(-r,r\right):r\in\mathbb{Q}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left(-\left(1+\frac{1}{n}\right)^{n},\left(1+\frac{1}{n}\right)^{n}\right)\in\mathcal{T}_{3}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left(-e,e\right)\notin\mathcal{T}_{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{4}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left[-r,r\right]:r\in\mathbb{Q}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left[-\left(1+\frac{1}{n}\right)^{n},\left(1+\frac{1}{n}\right)^{n}\right]\in\mathcal{T}_{4}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left[-e,e\right]\notin\mathcal{T}_{4}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{5}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left(-r,r\right):r\notin\mathbb{Q}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left(-\frac{\pi}{n}-1,\frac{\pi}{n}+1\right)\in\mathcal{T}_{5}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left(-1,1\right)\notin\mathcal{T}_{5}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{6}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left[-r,r\right]:r\notin\mathbb{Q}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left[-\frac{\pi}{n}-1,\frac{\pi}{n}+1\right]\in\mathcal{T}_{6}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left[-1,1\right]\notin\mathcal{T}_{6}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{7}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left[-r,r\right):r\in\mathbb{R}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left[-1+\frac{1}{n},1-\frac{1}{n}\right)\in\mathcal{T}_{7}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left(-1,1\right)\notin\mathcal{T}_{7}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{8}=\left\{ \mathbb{R},\emptyset\right\} \cup\left\{ \left(-r,r\right]:r\in\mathbb{R}\right\} $
+\end_inset
+
+ is not a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Notice that for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+A_{n}=\left(-1+\frac{1}{n},1-\frac{1}{n}\right]\in\mathcal{T}_{8}
+\]
+
+\end_inset
+
+therefore
+\begin_inset Formula 
+\[
+\bigcup_{n\in\mathbb{N}}A_{n}=\left(-1,1\right)\notin\mathcal{T}_{8}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{9}$
+\end_inset
+
+ is a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{T}_{10}$
+\end_inset
+
+ is a topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Open, Closed and Clopen Sets
+\end_layout
+
+\begin_layout SmartQuestion
+Number of subsets goes brrrrrr.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space such that every subset 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ is closed.
+ Then the subset 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is closed.
+ By the definition of a closed subspace
+\begin_inset Formula 
+\[
+X\setminus\left(X\setminus A\right)=A
+\]
+
+\end_inset
+
+ is open.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is arbitrary, it follows that 
+\begin_inset Formula $\mathcal{P}\left(X\right)\subseteq\mathcal{T}$
+\end_inset
+
+, so 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the discrete topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a,b\right\} ,\left\{ c,d\right\} \right\} $
+\end_inset
+
+ be a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ It is easy to check that every set of 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is open and closed.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be and infinite set and 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ be a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ such that every infinite subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is closed.
+ Let 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is infinite, then it is closed, and thus
+\begin_inset Formula 
+\[
+X\setminus\left(X\setminus A\right)=A
+\]
+
+\end_inset
+
+ is open.
+ If 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is finite, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is infinite, and as such closed.
+ So by definition 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is open.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is arbitrary, we conclude that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the discrete topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+No.
+ Let 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ x\right\} \right\} $
+\end_inset
+
+ for some element 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ be a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is not the indiscrete topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ but the only infinite open subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be a nonempty set and 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,A,B\right\} $
+\end_inset
+
+ such that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are nonempty distinct proper subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+If none of the conditions apply, we have two possible cases, 
+\begin_inset Formula $A\cap B=\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap B\neq\emptyset$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are disjunct, then their union will not be contained in 
+\begin_inset Formula $A$
+\end_inset
+
+ nor 
+\begin_inset Formula $B$
+\end_inset
+
+, but will also not be 
+\begin_inset Formula $X$
+\end_inset
+
+, else condition (a) would apply.
+ As such, the union is not open.
+ If they are not disjunct, but are distinct and condition (b) and (c) do
+ not apply, then their intersection will not be open.
+ As such, we have that some condition must apply.
+ But the conditions are obviously exlusive, so we conclude that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+is a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ if one (and only one) of the conditions holds.
+\end_layout
+
+\begin_layout SmartQuestion
+Topologies on 
+\begin_inset Formula $X$
+\end_inset
+
+ go brrrrrrr.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
