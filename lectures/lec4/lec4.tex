@@ -1,0 +1,83 @@
+\documentclass[../../main/main.tex]{subfiles}
+
+\begin{document}
+\chapter{01/10/2020}
+\label{cpt:lec4}
+
+\section{Accumulation Points}
+\label{sec:label}
+
+
+\begin{definition}
+  Let $(X, \Top)$ be a topological space and $Y \subseteq X$. We say that $x \in Y$ is an {\bf accumulation point} of $Y$ if every open subset containing $x$ intersects $Y$ in a a point different to $x$. We denote the set of accumulation points of $Y$ by $Y'$.
+\end{definition}
+
+\begin{example}
+  In $\mathbb{R}$ we have that
+  \begin{itemize}
+    \item $\left( [0, 1) \cap \{2\} \right)' = \left[ 0, 1 \right]$
+    \item $\mathbb{Q} = \mathbb{R}$.
+  \end{itemize}
+\end{example}
+
+\begin{theorem}
+  \label{thm:accumulation-points}
+  Let $(X, \Top)$ be a topological space and $F \subseteq X$. Then $F$ is closed if and only if $F' \subseteq F$.
+\end{theorem}
+\begin{proof}
+  Suppose that $F$ is closed and that $x \in F'$. We aim to prove that $x \in F$. We have that $X \setminus F$ is open. Suppose $x \notin F$, then $x \in X \setminus F$. But
+  \begin{equation*}
+    \left( X \setminus F \right)  \cap F = \emptyset
+  \end{equation*}
+  which implies that no intersection of subsets of $F$ intersects with any open sets containing $x$ on any other point, which is a contradiction. Then $F' \subseteq F$.
+
+  Suppose now that $F' \subseteq F$. Then if $x \in X \setminus F$ then $x$ is not an accumulation point, so there exists an open subset $A_{x} \in X \setminus F$ such that $x \in A_{x}$ and $F \cap A_{x} = \emptyset$. Then $X \setminus F = \bigcup_{x \in X \setminus F} A_{x}$ is open, hence $F$ is closed.
+\end{proof}
+
+\begin{remark}
+  Let $(X, \Top)$ be a topological space. Then, for all $Y \subseteq X$, $Y \cup Y'$ is closed.
+\end{remark}
+\begin{proof}
+  Let $x \in X \setminus (Y \cup Y')$. Notice that $X \setminus (Y \cup Y') = (X \setminus Y) \cap (X \setminus Y')$. Let $A$ be an open subset that contains $x$.
+
+  Assume that $A \cap Y' = \emptyset$ but $A \cap Y \neq \emptyset$. Then there exists $z \neq x \in A \cap Y$ so $x$ is an accumulation point, which is a contradiction.
+
+  Assume now that $A \cap Y = \emptyset$ but $A \cap Y' \neq \emptyset$. Then there exists $z \neq x \in A \cap Y'$. But because $z$ is an accumulation point, we know that $A \cap Y \neq \emptyset$ which is a contradiction.
+
+  Thus we have that $A \cap X \setminus (Y \cup Y') = \emptyset$ and the unions of these sets is open, so $X \setminux (Y \cup Y')$ is closed.
+\end{proof}
+
+\begin{definition}
+  We call the subset $Y \cup Y'$ the {\bf closure} of $Y$ and write $\bar{Y}$.
+\end{definition}
+
+\begin{remark}
+  Let $(X, \Top)$ be a topological space and $x \in X$. Let $Y$ be a subset of $X$. Then $x \in \bar{Y}$ if every open subset of $X$ containing $x$ intersects $Y$.
+\end{remark}
+\begin{proof}
+  Let $A$ be an open subset of $X$ such that $x \in A$.
+
+  Assume $x \in Y$. Obviously $A \cap Y \neq \emptyset$. Assume now $x \notin Y$. As $x \in Y'$, there exists $z \in A$ such that $z \in A \cap Y$ therefore $A \cap Y \neq \emptyset$.
+\end{proof}
+
+\begin{corolary}
+  Let $(X, \Top)$ be a topological space and $F \subseteq X$. Then $F$ is closed if and only if $\bar{F} = F$.
+\end{corolary}
+\begin{proof}
+  Assume $F$ is closed. Then, by theorem \ref{thm:accumulation-points} it follows that $F' \subseteq F$, thus $\bar{F} = F$.
+
+  Assume now that $\bar{F} = F$. Then
+    \begin{equation*}
+      F \cup F' = F \Longrightarrow F' \subseteq F
+    \end{equation*}
+    and by the reverse application of theorem \ref{thm:accumulation-points}, $F$ is closed.
+\end{proof}
+
+\begin{corolary}
+  $\bar{Y}$ is the smallest closed subset that contains $Y$.
+\end{corolary}
+\begin{proof}
+  Suppose that $F$ is closed and $Y \subseteq F$. Then $\bar{Y} \subseteq \bar{F}$. But $F$ is closed, so $\bar{Y} \subseteq F$, so $\bar{Y}$ is the smallest.
+\end{proof}
+
+\end{document}
