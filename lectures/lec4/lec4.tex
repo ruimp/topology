@@ -4,12 +4,12 @@
 \chapter{01/10/2020}
 \label{cpt:lec4}
 
-\section{Accumulation Points}
+\section{Limit Points}
 \label{sec:label}
 
 
 \begin{definition}
-  Let $(X, \Top)$ be a topological space and $Y \subseteq X$. We say that $x \in Y$ is an {\bf accumulation point} of $Y$ if every open subset containing $x$ intersects $Y$ in a a point different to $x$. We denote the set of accumulation points of $Y$ by $Y'$.
+  Let $(X, \Top)$ be a topological space and $Y \subseteq X$. We say that $x \in Y$ is an {\bf limit point} of $Y$ if every open subset containing $x$ intersects $Y$ in a a point different to $x$. We denote the set of limit points of $Y$ by $Y'$.
 \end{definition}
 
 \begin{example}
@@ -21,7 +21,7 @@
 \end{example}
 
 \begin{theorem}
-  \label{thm:accumulation-points}
+  \label{thm:limit-points}
   Let $(X, \Top)$ be a topological space and $F \subseteq X$. Then $F$ is closed if and only if $F' \subseteq F$.
 \end{theorem}
 \begin{proof}
@@ -31,7 +31,7 @@
   \end{equation*}
   which implies that no intersection of subsets of $F$ intersects with any open sets containing $x$ on any other point, which is a contradiction. Then $F' \subseteq F$.
 
-  Suppose now that $F' \subseteq F$. Then if $x \in X \setminus F$ then $x$ is not an accumulation point, so there exists an open subset $A_{x} \in X \setminus F$ such that $x \in A_{x}$ and $F \cap A_{x} = \emptyset$. Then $X \setminus F = \bigcup_{x \in X \setminus F} A_{x}$ is open, hence $F$ is closed.
+  Suppose now that $F' \subseteq F$. Then if $x \in X \setminus F$ then $x$ is not an limit point, so there exists an open subset $A_{x} \in X \setminus F$ such that $x \in A_{x}$ and $F \cap A_{x} = \emptyset$. Then $X \setminus F = \bigcup_{x \in X \setminus F} A_{x}$ is open, hence $F$ is closed.
 \end{proof}
 
 \begin{remark}
@@ -40,9 +40,9 @@
 \begin{proof}
   Let $x \in X \setminus (Y \cup Y')$. Notice that $X \setminus (Y \cup Y') = (X \setminus Y) \cap (X \setminus Y')$. Let $A$ be an open subset that contains $x$.
 
-  Assume that $A \cap Y' = \emptyset$ but $A \cap Y \neq \emptyset$. Then there exists $z \neq x \in A \cap Y$ so $x$ is an accumulation point, which is a contradiction.
+  Assume that $A \cap Y' = \emptyset$ but $A \cap Y \neq \emptyset$. Then there exists $z \neq x \in A \cap Y$ so $x$ is an limit point, which is a contradiction.
 
-  Assume now that $A \cap Y = \emptyset$ but $A \cap Y' \neq \emptyset$. Then there exists $z \neq x \in A \cap Y'$. But because $z$ is an accumulation point, we know that $A \cap Y \neq \emptyset$ which is a contradiction.
+  Assume now that $A \cap Y = \emptyset$ but $A \cap Y' \neq \emptyset$. Then there exists $z \neq x \in A \cap Y'$. But because $z$ is an limit point, we know that $A \cap Y \neq \emptyset$ which is a contradiction.
 
   Thus we have that $A \cap X \setminus (Y \cup Y') = \emptyset$ and the unions of these sets is open, so $X \setminus (Y \cup Y')$ is closed.
 \end{proof}
@@ -64,13 +64,13 @@
   Let $(X, \Top)$ be a topological space and $F \subseteq X$. Then $F$ is closed if and only if $\bar{F} = F$.
 \end{corolary}
 \begin{proof}
-  Assume $F$ is closed. Then, by theorem \ref{thm:accumulation-points} it follows that $F' \subseteq F$, thus $\bar{F} = F$.
+  Assume $F$ is closed. Then, by theorem \ref{thm:limit-points} it follows that $F' \subseteq F$, thus $\bar{F} = F$.
 
   Assume now that $\bar{F} = F$. Then
     \begin{equation*}
       F \cup F' = F \Longrightarrow F' \subseteq F
     \end{equation*}
-    and by the reverse application of theorem \ref{thm:accumulation-points}, $F$ is closed.
+    and by the reverse application of theorem \ref{thm:limit-points}, $F$ is closed.
 \end{proof}
 
 \begin{corolary}

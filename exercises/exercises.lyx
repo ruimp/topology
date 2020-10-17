@@ -32,7 +32,7 @@
 \spacing single
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -57,6 +57,8 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 2cm
+\rightmargin 2cm
 \secnumdepth 2
 \tocdepth 2
 \paragraph_separation indent
@@ -693,70 +695,7 @@ We take the chance to prove that
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Assume 
-\begin_inset Formula $r\in\mathbb{R}$
-\end_inset
-
- such that 
-\begin_inset Formula $r\in\bigcup_{i\in I}\left(-r_{i},r_{i}\right)$
-\end_inset
-
-.
- Then, 
-\begin_inset Formula $r\in\left(-r_{j},r_{j}\right)$
-\end_inset
-
- for some 
-\begin_inset Formula $j\in I$
-\end_inset
-
-.
- By definition of supremum, we have that 
-\begin_inset Formula $r_{j}<\sup\left(r_{i}\right)$
-\end_inset
-
- thus 
-\begin_inset Formula $r\in\left(-\sup\left(r_{i}\right),\sup\left(r_{i}\right)\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Assume now 
-\begin_inset Formula $r\in\mathbb{R}$
-\end_inset
-
- such that 
-\begin_inset Formula $r\in\left(-\sup\left(r_{i}\right),\sup\left(r_{i}\right)\right)$
-\end_inset
-
-.
- Then there exist 
-\begin_inset Formula $0<a<\sup\left(r_{i}\right)$
-\end_inset
-
- that obey the inequality 
-\begin_inset Formula 
-\[
--\sup\left(r_{i}\right)<-a<r<a<\sup\left(r_{i}\right)
-\]
-
-\end_inset
-
-hence there exist 
-\begin_inset Formula $r<r_{j}<\sup\left(r_{i}\right)$
-\end_inset
-
- which implies
-\begin_inset Formula 
-\[
-r\in\left(-r_{j},r_{j}\right)\subseteq\left(-\sup\left(r_{i}\right),\sup\left(r_{i}\right)\right).
-\]
-
+\begin_inset Newline newline
 \end_inset
 
 
@@ -1223,6 +1162,1387 @@ Topologies on
 \end_inset
 
  go brrrrrrr.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ be a finite space such that 
+\begin_inset Formula $\text{\left|X\right|=n}$
+\end_inset
+
+.
+ Let us denote the elements of 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ by 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in N$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $M_{n}$
+\end_inset
+
+ be the set of all topologies on 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+For 
+\begin_inset Formula $X_{n+1}=\left\{ x_{1},\dots,x_{n}\right\} \cup\left\{ x_{n+1}\right\} $
+\end_inset
+
+ we have atleast 
+\begin_inset Formula $\left|M_{n}\right|$
+\end_inset
+
+ topologies, that only contain the element 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ in the subset 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+.
+ Because the famility 
+\begin_inset Formula $\left\{ X_{n+1},\emptyset,\left\{ x_{n+1}\right\} \right\} \in M_{n+1}$
+\end_inset
+
+ it follows that 
+\begin_inset Formula $\left|M_{n+1}\right|>\left|M_{n}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+It is clear that if 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is a topology on 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+, then if we replace 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ by 
+\begin_inset Formula $x_{n+1}$
+\end_inset
+
+ it is clear that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is a topology on 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+.
+ As such, for each topology on 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+, there are atleast 
+\begin_inset Formula $n$
+\end_inset
+
+ topologies on 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+.
+ Therefore we conclude that 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ has at least 
+\begin_inset Formula $\left(n-1\right)!$
+\end_inset
+
+ topologies.
+\end_layout
+
+\begin_layout SmartQuestion
+Let now 
+\begin_inset Formula $X$
+\end_inset
+
+ be an infinite set.
+ Then for any subset 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ we have that the topology
+\begin_inset Formula 
+\[
+\mathcal{T}=\left\{ X,\emptyset,A\right\} 
+\]
+
+\end_inset
+
+is a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ of cardinatily 
+\begin_inset Formula $\aleph$
+\end_inset
+
+.
+ As such, we have that there are at least 
+\begin_inset Formula $\left|\mathcal{P}\left(X\right)\right|$
+\end_inset
+
+ topologies on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ For a set of 
+\begin_inset Formula $N$
+\end_inset
+
+ elements we have that
+\begin_inset Formula 
+\[
+\left|\mathcal{P}\left(X_{N}\right)\right|=\sum_{i=0}^{N}\begin{pmatrix}N\\
+i
+\end{pmatrix}=2^{N}.
+\]
+
+\end_inset
+
+As such, there are at least 
+\begin_inset Formula $2^{\aleph}$
+\end_inset
+
+ topologies defined on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Finite-Closed Topology
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $f:X\rightarrow Y$
+\end_inset
+
+ be a function between two sets 
+\begin_inset Formula $X,Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+We aim to prove that
+\begin_inset Formula 
+\[
+f^{-1}\left(\bigcup_{j\in J}B_{j}\right)=\bigcup_{j\in J}f^{-1}\left(B_{j}\right).
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $x\in\bigcup_{j\in J}B_{j}$
+\end_inset
+
+, so 
+\begin_inset Formula $y=f^{-1}\left(x\right)\in f^{-1}\left(\bigcup_{j\in J}B_{j}\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in B_{k}$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in J$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula 
+\[
+y\in f^{-1}\left(B_{k}\right)\subseteq\bigcup_{j\in J}f^{-1}\left(B_{j}\right).
+\]
+
+\end_inset
+
+Now let 
+\begin_inset Formula $y\in\bigcup_{j\in J}f^{-1}\left(B_{j}\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $y\in f^{-1}\left(B_{k}\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in J$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $x\in B_{k}\subseteq\bigcup_{j\in J}B_{j}$
+\end_inset
+
+, hence
+\begin_inset Formula 
+\[
+y\in f^{-1}\left(\bigcup_{j\in J}B_{j}\right)
+\]
+
+\end_inset
+
+and that concludes the proof.
+\end_layout
+
+\begin_layout SmartQuestion
+We want to prove that for any 
+\begin_inset Formula $B_{j}\subseteq Y$
+\end_inset
+
+ with 
+\begin_inset Formula $j\in J$
+\end_inset
+
+,
+\begin_inset Formula 
+\[
+f^{-1}\left(B_{1}\cap B_{2}\right)=f^{-1}\left(B_{1}\right)\cap f^{-1}\left(B_{2}\right).
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $x\in B_{1}\cap B_{2}$
+\end_inset
+
+, then 
+\begin_inset Formula $x\in B_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B_{2}$
+\end_inset
+
+.
+ As such
+\begin_inset Formula 
+\[
+y=f^{-1}\left(x\right)\in f^{-1}\left(B_{1}\right)\quad\text{and}\quad y\in f^{-1}\left(B_{2}\right)
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula $x\in f^{-1}\left(B_{1}\right)\cap f^{-1}\left(B_{2}\right)$
+\end_inset
+
+.
+ Now assume 
+\begin_inset Formula $y\in f^{-1}\left(B_{1}\right)\cap f^{-1}\left(B_{2}\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $y\in f^{-1}\left(B_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in f^{-1}\left(B_{2}\right)$
+\end_inset
+
+, thus 
+\begin_inset Formula $x\in B_{1}$
+\end_inset
+
+and 
+\begin_inset Formula $x\in B_{2}$
+\end_inset
+
+.
+ We may then conclude that
+\begin_inset Formula 
+\[
+x\in B_{1}\cap B_{2}\Longrightarrow y\in f^{-1}\left(B_{1}\cap B_{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=Y=\mathbb{R}$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{align*}
+f:\mathbb{R} & \longrightarrow\mathbb{R}\\
+x & \longmapsto\begin{cases}
+x+1 & \text{if }x<1\\
+x-1 & \text{if }x\geq1
+\end{cases}.
+\end{align*}
+
+\end_inset
+
+Let 
+\begin_inset Formula $A=\left(0,1\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\left(2,3\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A,B\subseteq X$
+\end_inset
+
+ but 
+\begin_inset Formula $f^{-1}\left(A\cap B\right)=\emptyset$
+\end_inset
+
+ but
+\begin_inset Formula 
+\[
+f^{-1}\left(A\right)\cap f^{-1}\left(B\right)=\left(1,2\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+No.
+ For example, the subset
+\begin_inset Formula 
+\[
+A=\left\{ 3,4,\cdots\right\} \cup\left\{ 1\right\} 
+\]
+
+\end_inset
+
+is not open in the final segment topology, but it is open in the cofinite
+ topology, because 
+\begin_inset Formula $\mathbb{N}\setminus A=\left\{ 2\right\} $
+\end_inset
+
+ is finite.
+\end_layout
+
+\begin_layout SmartQuestion
+The every singleton set 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ in a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is a closed subset if 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is a discrete space of an infinite space with the cofinite topology.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ be a cofinite topology on a set 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is discrete.
+ As we showed before, every set the discrete topology is clopen.
+ As such, any 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is open.
+ But 
+\begin_inset Formula $X\setminus A\in\mathcal{T}$
+\end_inset
+
+ because it is discrete, hence 
+\begin_inset Formula $X\setminus\left(X\setminus A\right)=A$
+\end_inset
+
+ is open.
+ Thus, 
+\begin_inset Formula $A$
+\end_inset
+
+ is finite.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is arbitrary, 
+\begin_inset Formula $X$
+\end_inset
+
+ is finite.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Because 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+, for every pair 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+ there exist open sets 
+\begin_inset Formula $A,B$
+\end_inset
+
+ such that 
+\begin_inset Formula $A$
+\end_inset
+
+ contains 
+\begin_inset Formula $a$
+\end_inset
+
+ but not 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $B$
+\end_inset
+
+ contains 
+\begin_inset Formula $b$
+\end_inset
+
+ but not 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ As such, a set that contains one point but not the other, for example,
+ 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Thus, every 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The discrete space is contains every singleton subset of 
+\begin_inset Formula $X$
+\end_inset
+
+, which trivially contains a point but no other.
+ As such, a discrete space is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The only open subsets of an indiscrete space with at least two points are
+ the empty set and 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ As such, every open set containing a point 
+\begin_inset Formula $a$
+\end_inset
+
+ contains every other point.
+ Thus the indiscrete space with at least two points is not 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+The cofinite topology contains every sigleton subset of 
+\begin_inset Formula $X$
+\end_inset
+
+, thus the same argument of (i) applies.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X=\left\{ a,b,c,d,e,f\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ c,d\right\} ,\left\{ a,c,d\right\} ,\left\{ b,c,d,e,f\right\} \right\} $
+\end_inset
+
+.
+ Then every set containing 
+\begin_inset Formula $c$
+\end_inset
+
+ also contains 
+\begin_inset Formula $d$
+\end_inset
+
+, thus 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is not 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be an infinite set and
+\begin_inset Formula 
+\[
+\mathcal{T}=\left\{ X\setminus A\subseteq X:A\subseteq X\text{ is countable}\right\} \cup\left\{ \emptyset\right\} .
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+By definition 
+\begin_inset Formula $X,\emptyset\in\mathcal{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B\in\mathcal{T}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+X\setminus\left(A\cap B\right)=\left(X\setminus A\right)\cup\left(X\setminus B\right)\in\mathcal{T}
+\]
+
+\end_inset
+
+because the union of countable sets is countable.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A_{i}\in\mathcal{T}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ be a family of open sets.
+ Then
+\begin_inset Formula 
+\[
+X\setminus\left(\bigcup_{i\in I}A_{i}\right)=\bigcap_{i\in I}\left(X\setminus A_{i}\right)\in\mathcal{T}
+\]
+
+\end_inset
+
+because the arbitrary intersection of countable sets is countable.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}$
+\end_inset
+
+ be topologies on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+The union 
+\begin_inset Formula $\mathcal{T}_{3}=\mathcal{T}_{1}\cup\mathcal{T}_{2}$
+\end_inset
+
+ is not necesseraly a topology.
+ Take 
+\begin_inset Formula $X=\left\{ a,b,c\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{T}_{1}=\left\{ X,\emptyset,\left\{ a\right\} \right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}=\left\{ X,\emptyset,\left\{ b\right\} \right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{T}_{3}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ b\right\} \right\} $
+\end_inset
+
+, which is not a topology because
+\begin_inset Formula 
+\[
+\left\{ a\right\} \cup\left\{ b\right\} =\left\{ a,b\right\} \notin\mathcal{T}_{3}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+The intersection of topologies 
+\begin_inset Formula $\mathcal{T}_{4}=\mathcal{T}_{1}\cap\mathcal{T}_{2}$
+\end_inset
+
+, is a topology.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\left\{ X,\emptyset\right\} \subseteq\mathcal{T}_{1}\cap\mathcal{T}_{2}$
+\end_inset
+
+, hence 
+\begin_inset Formula $X,\emptyset\in\mathcal{T}_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B\in\mathcal{T}_{4}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A\cap B\in\mathcal{T}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap B\in\mathcal{T}_{2}$
+\end_inset
+
+, thus 
+\begin_inset Formula $A\cap B\in\mathcal{T}_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A_{i}\in\mathcal{T}_{4}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ be a family of open sets.
+ The 
+\begin_inset Formula $\bigcup_{i\in I}A_{i}$
+\end_inset
+
+ is still contained in both 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\bigcup_{i\in I}A_{i}\in\mathcal{T}_{4}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+We assume that for all distinct points 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+ there exists open sets 
+\begin_inset Formula $A_{1},B_{1}\in\mathcal{T}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2},B_{2}\in\mathcal{T}_{2}$
+\end_inset
+
+ such that 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ contains 
+\begin_inset Formula $a$
+\end_inset
+
+ but not 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ contains 
+\begin_inset Formula $b$
+\end_inset
+
+ but not 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $A_{1}\cap A_{2}$
+\end_inset
+
+ contains 
+\begin_inset Formula $a$
+\end_inset
+
+ but not 
+\begin_inset Formula $b$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{1}\cap B_{2}$
+\end_inset
+
+ contains 
+\begin_inset Formula $b$
+\end_inset
+
+ but not 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $\mathcal{T}_{4}$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\left\{ a,b\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{T}_{1}=\left\{ X,\emptyset,\left\{ a\right\} \right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}=\left\{ X,\emptyset,\left\{ b\right\} \right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}$
+\end_inset
+
+ are 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+ spaces but 
+\begin_inset Formula 
+\[
+\mathcal{T}_{4}=\mathcal{T}_{1}\cap\mathcal{T}_{2}=\left\{ X,\emptyset\right\} 
+\]
+
+\end_inset
+
+is not, as there is not subset of 
+\begin_inset Formula $\mathcal{T}_{4}$
+\end_inset
+
+ that contains 
+\begin_inset Formula $a$
+\end_inset
+
+ but not 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The case for 
+\begin_inset Formula $n=2$
+\end_inset
+
+ was handled above.
+ Let us assume that 
+\begin_inset Formula $\mathcal{\mathcal{T}}=\bigcap_{i=1}^{n}\mathcal{T}_{i}$
+\end_inset
+
+ is a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\bigcap_{i=1}^{n+1}\mathcal{T}_{i}=\mathcal{T}_{n+1}\cap\mathcal{T}
+\]
+
+\end_inset
+
+is a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+, because it is the intersection of two topologies.
+ Thus the proof follows by induction.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ be an arbitrary family of topologies on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $X,\emptyset\in\mathcal{T}_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in I$
+\end_inset
+
+, thus 
+\begin_inset Formula $X,\emptyset\in\bigcap_{i\in I}\mathcal{T}_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B\in\bigcap_{i\in I}\mathcal{T}_{i}$
+\end_inset
+
+.
+ Then both 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are contained in each 
+\begin_inset Formula $\mathcal{T}_{i}$
+\end_inset
+
+.
+ Thus their intersection is too and 
+\begin_inset Formula $A\cap B\in\bigcap_{i\in I}\mathcal{T}_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A_{j}\in\bigcap_{i\in I}\mathcal{T}_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $j\in J$
+\end_inset
+
+ be an arbitrary familiy of open sets.
+ Thus 
+\begin_inset Formula $A_{j}$
+\end_inset
+
+ is contained in each 
+\begin_inset Formula $\mathcal{T}_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $j\in J$
+\end_inset
+
+.
+ Because each 
+\begin_inset Formula $\mathcal{T}_{i}$
+\end_inset
+
+ is a topology, we have that 
+\begin_inset Formula $\bigcup_{j\in J}A_{j}\in\mathcal{T}_{i}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in I$
+\end_inset
+
+.
+ Hence
+\begin_inset Formula 
+\[
+\bigcup_{j\in J}A_{j}\in\bigcap_{i\in I}\mathcal{T}_{i}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ denote a space of cardinality 
+\begin_inset Formula $\left|X_{n}\right|=n$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $M_{n}$
+\end_inset
+
+ denote the number of possible 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+ topologies on 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+.
+ Because we may construct every topology of 
+\begin_inset Formula $M_{n}$
+\end_inset
+
+ using the first 
+\begin_inset Formula $n$
+\end_inset
+
+ elements of 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+ (and replacing 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ with 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+), we have that 
+\begin_inset Formula $M_{n+1}\geq M_{n}$
+\end_inset
+
+.
+ Notice now that the discrete topology on 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+ is not counted in 
+\begin_inset Formula $M_{n}$
+\end_inset
+
+, because 
+\begin_inset Formula $\mathcal{P}\left(X_{n}\right)<\mathcal{P}\left(X_{n+1}\right)$
+\end_inset
+
+ and is 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+ on 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $M_{n+1}>M_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+In the discrete topology on 
+\begin_inset Formula $X$
+\end_inset
+
+, every subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is clopen, thus a discrete space is a door space.
+\end_layout
+
+\begin_layout SmartQuestion
+If 
+\begin_inset Formula $\left|X\right|\geq1$
+\end_inset
+
+, the indiscrete topology is not a door space, for the only open or closed
+ sets are 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ be infinite.
+ Then the cofinite topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ is not necesseraly a door space.
+ For example, let 
+\begin_inset Formula $X=\mathbb{Z}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $2\mathbb{Z}$
+\end_inset
+
+, the set of all even intergers, is not open in 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ with the cofinite topology, for 
+\begin_inset Formula $\mathbb{Z}\setminus2\mathbb{Z}$
+\end_inset
+
+ is infinite, and is also not closed, and 
+\begin_inset Formula $\mathbb{Z}\setminus2\mathbb{Z}$
+\end_inset
+
+ is also not open.
+\end_layout
+
+\begin_layout SmartQuestion
+The only door topology on 
+\begin_inset Formula $X$
+\end_inset
+
+ is the discrete one.
+ Let 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ be a topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Consider the singular sets.
+ If they are open, then 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the discrete topology.
+ If they are closed, then all subsets of the form 
+\begin_inset Formula $\left\{ x,y,z\right\} $
+\end_inset
+
+ for 
+\begin_inset Formula $x,y,z\in X$
+\end_inset
+
+ must be open.
+ But so must their intersections, which imply that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the discrete topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A=A\cap A$
+\end_inset
+
+, so 
+\begin_inset Formula $A$
+\end_inset
+
+ is saturated.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+ Then every singular subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is closed.
+ Writing 
+\begin_inset Formula $A=\bigcup_{x_{i}\in A}\left\{ x_{i}\right\} $
+\end_inset
+
+ we have that
+\begin_inset Formula 
+\[
+X\setminus\bigcup_{x_{i}\in A}\left\{ x_{i}\right\} =\bigcap_{x_{i}\in A}\left(X\setminus\left\{ x_{i}\right\} \right)
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $A$
+\end_inset
+
+ is the intersection of open sets and thus saturated.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\left\{ a,b\right\} $
+\end_inset
+
+ with the indiscrete topology.
+ Then the subset 
+\begin_inset Formula $A=\left\{ a\right\} $
+\end_inset
+
+ is not saturated.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $a,b\in X$
+\end_inset
+
+ be distinct.
+ Because 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ is saturated, we have that 
+\begin_inset Formula $\left\{ a\right\} =\bigcap_{i\in I}U_{i}$
+\end_inset
+
+ for some family of open sets 
+\begin_inset Formula $U_{i}$
+\end_inset
+
+.
+ Thus there exists some 
+\begin_inset Formula $k\in I$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\in U_{k}$
+\end_inset
+
+ but 
+\begin_inset Formula $b\notin U_{k}$
+\end_inset
+
+.
+ By the application of the same argument to the saturated set 
+\begin_inset Formula $\left\{ b\right\} $
+\end_inset
+
+, it follows that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_deeper
