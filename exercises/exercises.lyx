@@ -83,11 +83,11 @@
 Exercises on Topology
 \end_layout
 
-\begin_layout Part
+\begin_layout Section
 Topological Spaces
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Topology
 \end_layout
 
@@ -917,7 +917,7 @@ therefore
 \end_layout
 
 \end_deeper
-\begin_layout Section
+\begin_layout Subsection
 Open, Closed and Clopen Sets
 \end_layout
 
@@ -1342,7 +1342,7 @@ As such, there are at least
 \end_layout
 
 \end_deeper
-\begin_layout Section
+\begin_layout Subsection
 Finite-Closed Topology
 \end_layout
 
@@ -2543,6 +2543,2325 @@ Let
 
 .
  
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Euclidean Topology
+\end_layout
+
+\begin_layout Subsection
+The Euclidean Topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ is open in the euclidean topology.
+ Therefore we have that for all 
+\begin_inset Formula $x\in\left[a,b\right)$
+\end_inset
+
+ there exist 
+\begin_inset Formula $c,d\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $c<d\in\left[a,b\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $c<x<d$
+\end_inset
+
+.
+ Thus taking 
+\begin_inset Formula $x=a$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $c<a$
+\end_inset
+
+ and 
+\begin_inset Formula $c\in\left[a,b\right)$
+\end_inset
+
+ so 
+\begin_inset Formula 
+\[
+c<a\leq c
+\]
+
+\end_inset
+
+ which is a contradiction.
+ The proof for 
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+ is analogous.
+\begin_inset Newline newline
+\end_inset
+
+Assume now that 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ is closed.
+ Then 
+\begin_inset Formula $\mathbb{R}\setminus\left[a,b\right)=\left(-\infty,a\right)\cup\left[b,\infty\right)$
+\end_inset
+
+ is open.
+ But by an analogous argument, now considering 
+\begin_inset Formula $b$
+\end_inset
+
+, this is also a contradiction.
+ The same applies to 
+\begin_inset Formula $\left(a,b\right]$
+\end_inset
+
+.
+ Thus half closed intervals are neither open nor closed in the euclidean
+ topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $\left[a,\infty\right)$
+\end_inset
+
+ is closed if 
+\begin_inset Formula $\mathbb{R}\setminus\left[a,\infty\right)=\left(-\infty,a\right)$
+\end_inset
+
+ is open.
+ Notice that for all 
+\begin_inset Formula $x\in\left(-\infty,a\right)$
+\end_inset
+
+ there exist 
+\begin_inset Formula $b,c\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in\left(b,c\right)\subseteq\left(-\infty,a\right)$
+\end_inset
+
+.
+ For example, take
+\begin_inset Formula 
+\[
+\begin{cases}
+b= & x-1\\
+c= & \frac{x+a}{2}
+\end{cases}.
+\]
+
+\end_inset
+
+Hence 
+\begin_inset Formula $\left[a,\infty\right)$
+\end_inset
+
+ is closed in the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ The argument for 
+\begin_inset Formula $\left(-\infty,a\right]$
+\end_inset
+
+ is analogous.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider the union
+\begin_inset Formula 
+\[
+A=\bigcup_{n=1}^{\infty}\left[-1+\frac{1}{n},1-\frac{1}{n}\right]=\left(-1,1\right)
+\]
+
+\end_inset
+
+ which is clearly not closed in the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Assume 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is open.
+ Then for any 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ there exist 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a<b$
+\end_inset
+
+ and 
+\begin_inset Formula $n\in\left(a,b\right)\subseteq\mathbb{Z}$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ contains no intervals, because for every two elements 
+\begin_inset Formula $m_{1},m_{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ such that 
+\begin_inset Formula $m_{1}<m_{2}$
+\end_inset
+
+ we have that
+\begin_inset Formula 
+\[
+m_{1}<m_{1}+\frac{1}{2}<m_{2}
+\]
+
+\end_inset
+
+ for some 
+\begin_inset Formula $m_{1}+\frac{1}{2}\notin\mathbb{Z}$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is not open.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ for 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ denote the sequence of primes in increasing order.
+ Then
+\begin_inset Formula 
+\[
+\mathbb{R}\setminus\left(\bigcup_{n\in\mathbb{N}}\left\{ p_{n}\right\} \right)=\bigcap_{n\in\mathbb{N}}\left(\mathbb{R}\setminus\left\{ p_{n}\right\} \right)=\left(-\infty,p_{1}\right)\cup\left[\bigcup_{n\in\mathbb{N}}\left(p_{n},p_{n+1}\right)\right]
+\]
+
+\end_inset
+
+which is the union of open sets and therefore open.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ contains no intervals, as between every irrational number we find rational
+ numbers.
+ By an analogous argument to (a) we conclude that it is not open.
+ Now consider 
+\begin_inset Formula $\mathbb{R}\setminus\mathbb{I}=\mathbb{Q}$
+\end_inset
+
+.
+ But the aforementioned argument applies to 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ so it is not open either.
+ As such, 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ is neither open not closed.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Suppose that 
+\begin_inset Formula $F$
+\end_inset
+
+ is a nonempty finite subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $F$
+\end_inset
+
+ is finite is contains no intervals, thus it is not open.
+ Now let us write 
+\begin_inset Formula $F=\left\{ f_{1},\dots,f_{n}\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\mathbb{R}\setminus F=\left(-\infty,f_{1}\right)\cup\left[\bigcup_{i=1}^{n-1}\left(f_{i},f_{i+1}\right)\right]\cup\left(f_{n},\infty\right)
+\]
+
+\end_inset
+
+is the union for open intervals and therefore open.
+ We conclude that 
+\begin_inset Formula $F$
+\end_inset
+
+ is closed but not open.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $F\subset\mathbb{R}$
+\end_inset
+
+ be countable.
+ Then 
+\begin_inset Formula $F$
+\end_inset
+
+ contains no intervals so it is not open.
+ However, 
+\begin_inset Formula $F$
+\end_inset
+
+ may or may not be closed.
+ Notice, for example, that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ is countable and closed in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+Let us have the succession 
+\begin_inset Formula $s_{n}=\frac{1}{n}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A=\bigcup_{i=1}^{n}\left\{ s_{n}\right\} =\left(0,1\right]$
+\end_inset
+
+ which is not closed.'
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $S=\left\{ 0,1,\frac{1}{2},\frac{1}{3},\frac{1}{4},\dots,\frac{1}{n},\dots\right\} .$
+\end_inset
+
+ If 
+\begin_inset Formula $s_{n}=\frac{1}{n}$
+\end_inset
+
+ we have that 
+\begin_inset Formula 
+\[
+S=\left\{ 0\right\} \cup\bigcup_{i=1}^{n}\left\{ s_{n}\right\} =\left\{ 0\right\} \cup\left(0,1\right]=\left[0,1\right]
+\]
+
+\end_inset
+
+so it is closed.
+\end_layout
+
+\begin_layout SmartQuestion
+Yes, as seen before.
+\end_layout
+
+\begin_layout SmartQuestion
+Yes.
+ Let 
+\begin_inset Formula $\mathbb{Z}\left(\sqrt{2}\right)=\left\{ n\sqrt{2}:n\in\mathbb{Z}\right\} $
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\mathbb{R}\setminus\mathbb{Z}\left(\sqrt{2}\right)=\bigcup_{n\in\mathbb{Z}}\left(n\sqrt{2},\left(n+1\right)\sqrt{2}\right)
+\]
+
+\end_inset
+
+which is the union of open intervals and therefore open.
+ Hence 
+\begin_inset Formula $\mathbb{Z}\left(\sqrt{2}\right)$
+\end_inset
+
+ is closed.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $S\subseteq X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ is said to be an 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+-set if it is the coutable union of closed sets.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ is said to be 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+-set if it is the countable intersection of open sets.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Notice that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\left(a,b\right)=\bigcup_{i=1}^{n}\left[a+\frac{1}{n},b-\frac{1}{n}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+=
+\begin_inset Formula $\left[a,b\right]\cup\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Notice that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\left(a,b\right)=\left(a,b\right)\cap\left(a,b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left[a,b\right]=$
+\end_inset
+
+
+\begin_inset Formula $\bigcap_{i=1}^{n}\left(a-\frac{1}{n},b+\frac{1}{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\mathbb{Q}=\bigcup_{q\in\mathbb{Q}}\left\{ q\right\} $
+\end_inset
+
+ so 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is the countable union of closed sets.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ be a countable famility of open sets and 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ for 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ be a countable family of closed sets.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $X\setminus\left(\bigcup_{i\in\mathbb{N}}B_{i}\right)=\bigcap_{i\in\mathbb{N}}\left(X\setminus B_{i}\right)$
+\end_inset
+
+ which is the countable intersection of open sets.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $X\setminus\left(\bigcap_{i\in\mathbb{N}}A_{i}\right)=\bigcup_{i\in\mathbb{N}}\left(X\setminus A_{i}\right)$
+\end_inset
+
+ which is the countable intersection of closed sets, because if 
+\begin_inset Formula $X\setminus\left(X\setminus A_{i}\right)=A_{i}$
+\end_inset
+
+ is open for all 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Basis for a Topology
+\end_layout
+
+\begin_layout SmartQuestion
+Consider the disc 
+\begin_inset Formula $D=\left\{ \left(x,y\right)\in\mathbb{R}^{2}:x^{2}+y^{2}<1\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $R_{\left(a,b\right)}=\left(a\pm\frac{1-r}{8},b\pm\frac{1-r}{8}\right)$
+\end_inset
+
+.
+ Notice that
+\begin_inset Formula 
+\[
+\left|x^{2}+y^{2}\right|\leq\left|x\right|^{2}+\left|y\right|^{2}\leq\left|a\right|^{2}+\left|b\right|^{2}+ab\left(\frac{1-r}{8}\right)+\frac{\left(1-r\right)^{2}}{32}.
+\]
+
+\end_inset
+
+Because 
+\begin_inset Formula $ab$
+\end_inset
+
+ is maximum when 
+\begin_inset Formula $a=b=r/\sqrt{2}$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+\left|x^{2}+y^{2}\right|\leq r^{2}+r^{2}\left(\frac{1-r}{16}\right)+\frac{1-2r+r^{2}}{32}=\frac{1}{32}\left[-2r^{3}+3r^{2}-2r+1\right].
+\]
+
+\end_inset
+
+We seek to understand if 
+\begin_inset Formula $\left|x^{2}+y^{2}\right|$
+\end_inset
+
+ is ever greater than 1.
+ Notice that if for 
+\begin_inset Formula $r<1$
+\end_inset
+
+, we have that 
+\begin_inset Formula $-2r^{3}+3r^{2}<r$
+\end_inset
+
+, so the above inequality becomes
+\begin_inset Formula 
+\[
+\left|x^{2}+y^{2}\right|\leq\frac{1}{32}\left[1-r\right]\leq1
+\]
+
+\end_inset
+
+ as we wanted to show.
+\end_layout
+
+\begin_layout SmartQuestion
+We verified that for any point 
+\begin_inset Formula $\left(a,b\right)\in D$
+\end_inset
+
+ we can always find a rectangle 
+\begin_inset Formula $R_{\left(a,b\right)}\subseteq D$
+\end_inset
+
+ containing the point 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+ As such, it follows that
+\begin_inset Formula 
+\[
+D=\bigcup_{\left(a,b\right)\in D}R_{\left(a,b\right)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+As 
+\begin_inset Formula $R_{\left(a,b\right)}$
+\end_inset
+
+ is open in the euclidean topology on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $D$
+\end_inset
+
+ is the union of open sets and therefore open.
+\end_layout
+
+\begin_layout SmartQuestion
+By the same argument, we have that any disc centered in an arbitrary point
+ is the union of open rectangles, and therefore an open set in the euclidean
+ topology of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Consider the euclidean topology in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{2}$
+\end_inset
+
+ be disks in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ with radius 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $a_{2}$
+\end_inset
+
+ respectively, centered at the points 
+\begin_inset Formula $\left(c_{1},d_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(c_{2},d_{2}\right)$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\left(a,b\right)\in D_{1}\cap D_{2}$
+\end_inset
+
+.
+ Then we have that 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is contained in both 
+\begin_inset Formula $D_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $D_{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ be the distance to the center of each disk, that is
+\begin_inset Formula 
+\[
+\begin{cases}
+r_{1}= & \sqrt{\left(a-c_{1}\right)^{2}+\left(b-d_{1}\right)^{2}}\\
+r_{2}= & \sqrt{\left(a-c_{2}\right)^{2}+\left(b-d_{2}\right)^{2}}
+\end{cases}.
+\]
+
+\end_inset
+
+Taking 
+\begin_inset Formula $k=\min\left(a_{1}-r_{1},a_{2}-r_{2}\right)$
+\end_inset
+
+ we have that the disk centered at 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ of radius 
+\begin_inset Formula $k$
+\end_inset
+
+ is contained in 
+\begin_inset Formula $D_{1}\cap D_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The union of the afore mentioned disks on each point 
+\begin_inset Formula $\left(a,b\right)\in D_{1}\cap D_{2}$
+\end_inset
+
+ give the whole intersection 
+\begin_inset Formula $D_{1}\cap D_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that the intersection of disks is the union os disks and that the
+ union of disks generates the whole space 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, so disks are a basis for the euclidean topology on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Consider the intervals 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $a<b\in\mathbb{Q}$
+\end_inset
+
+.
+ We start by proving that these form a basis for some topology on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula $\bigcup_{n\in\mathbb{Z}}\left(n-1,n+1\right)=\mathbb{R}$
+\end_inset
+
+.
+ Now let 
+\begin_inset Formula $\left(a_{1},b_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(a_{2},b_{2}\right)$
+\end_inset
+
+ be intervals with rational limits.
+ The intersection
+\begin_inset Formula 
+\[
+\left(a_{1},b_{1}\right)\cap\left(a_{2},b_{2}\right)=\begin{cases}
+\emptyset & \text{ if disjoint}\\
+\left(\min\left(a_{1},a_{2}\right),\max\left(b_{1},b_{2}\right)\right) & \text{ otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+has rational limits, so it is the basis of some topology.
+ Now take an arbitrary open 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, then there exists 
+\begin_inset Formula $\left(c,d\right)\in A$
+\end_inset
+
+ such that 
+\begin_inset Formula $c<a<d$
+\end_inset
+
+.
+ But because because between two irrationals we may always find a rational
+ number, even if 
+\begin_inset Formula $c,d$
+\end_inset
+
+ are irrational, we find 
+\begin_inset Formula $e,f\in\mathbb{Q}$
+\end_inset
+
+ such that
+\begin_inset Formula 
+\[
+c<e<a<f<d
+\]
+
+\end_inset
+
+ and as such we that an interval 
+\begin_inset Formula $a\in\left(e,f\right)\in\mathcal{B}\subseteq A$
+\end_inset
+
+ so 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ is the basis of the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+A topological space satisfies the second axiom of countability if it is
+ generated by a countable basis.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology admits a basis
+\begin_inset Formula 
+\[
+\mathcal{B}=\left\{ \left(a,b\right)\in\mathbb{R}:a<b\in\mathbb{Q}\right\} 
+\]
+
+\end_inset
+
+ so it second countable.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ be a basis of an uncountable topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ to be a basis we require every intersection of elements of 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ be the union of elements of 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ The proof revolves around noticing all the singular sets must belong to
+ 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ If that were not the case, then set sets 
+\begin_inset Formula $\left\{ x_{i}\right\} \in\mathcal{T}$
+\end_inset
+
+ would not be contained in any subset of 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ As such, because 
+\begin_inset Formula $X$
+\end_inset
+
+ is uncountable, we have that 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ is uncountable, thus 
+\begin_inset Formula $X$
+\end_inset
+
+ is not second countable.
+\end_layout
+
+\begin_layout SmartQuestion
+The proof proceeds analogously to the ones performed before, but now with
+ n-cubes of rational lengths.
+\end_layout
+
+\begin_layout SmartQuestion
+Yes.
+ A finite subset of a countable set is necessarily countable.
+ Hence, for any finite subset 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+ we have that 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is open and the union of all these is 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ These constitute all the sets in the topology, hence 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is second countable.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+We consider the statements.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $m,c\in\mathbb{R}$
+\end_inset
+
+.
+ We define the line 
+\begin_inset Formula $L=\left\{ \left(x,y\right)\in\mathbb{R}^{2}:y=mx+c\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathbb{R}\setminus L=\underbar{\left\{ \left(x,y\right)\in\mathbb{R}^{2}:y\neq mx+c\right\} }$
+\end_inset
+
+.
+ Then either 
+\begin_inset Formula $y<mx+c$
+\end_inset
+
+ or 
+\begin_inset Formula $ymx+c$
+\end_inset
+
+.
+ Let us define these two subsets
+\begin_inset Formula 
+\[
+\begin{cases}
+Q_{1}= & \left\{ \left(x,y\right)\in\mathbb{R}^{2}:y<mx+c\right\} \\
+Q_{2}= & \left\{ \left(x,y\right)\in\mathbb{R}^{2}:y>mx+c\right\} 
+\end{cases}.
+\]
+
+\end_inset
+
+We will prove that these are disjoint open sets whose union is 
+\begin_inset Formula $\mathbb{R}\setminus L$
+\end_inset
+
+.
+ That 
+\begin_inset Formula $Q_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+ are disjoint is obvious.
+ Now assume 
+\begin_inset Formula $\left(u,v\right)\in Q_{1}$
+\end_inset
+
+.
+ Then the distance to the line is given by
+\begin_inset Formula 
+\[
+d=\frac{\left|mu+c-v\right|}{\sqrt{1+m^{2}}}.
+\]
+
+\end_inset
+
+As such we may always find an open disk 
+\begin_inset Formula $D_{d}$
+\end_inset
+
+ of radius 
+\begin_inset Formula $d$
+\end_inset
+
+ centered at 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(u,v\right)\in D\subseteq Q_{1}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $Q_{1}=\bigcup_{\left(u,v\right)\in\mathbb{R}^{2}}D_{d}\left(u,v\right)$
+\end_inset
+
+ is the union of open sets, therefore open.
+ The same argument applies to 
+\begin_inset Formula $Q_{2}$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $Q_{1}\cup Q_{2}$
+\end_inset
+
+ is the union of open sets and therefore open, and 
+\begin_inset Formula $\mathbb{R}\setminus L$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The argument is analogous to (a), but now considering a distance 
+\begin_inset Formula $d=1-\sqrt{u^{2}+v^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The argument is analogous to (a), but now considering a distance 
+\begin_inset Formula $d=1-\sqrt{\sum_{i=1}^{n}x_{i}^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The argument is similar, but now we consider only the outer region of the
+ ball.
+\end_layout
+
+\begin_layout SmartQuestion
+The argument is analogous to (a).
+\backslash
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(Y,\mathcal{T}_{2}\right)$
+\end_inset
+
+ be topological spaces admiting bases 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{B}_{2}$
+\end_inset
+
+, respectively.
+ We definite the product topology by the topology generated by the subsets
+ 
+\begin_inset Formula $B_{1}\times B_{2}\in\mathcal{B}_{1}\times\mathcal{B}_{2}$
+\end_inset
+
+.
+ We call this basis 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ of the topology 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ on 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+ We check that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ trivial generates 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, and 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{B}_{2}$
+\end_inset
+
+ generate 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+, hence 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ generates 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $C,D\in B$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+C\cap D=\left(X_{1}\times Y_{1}\right)\cap\left(X_{2}\times Y_{2}\right)=\left(X_{1}\cap X_{2}\right)\times\left(Y_{1}\times Y_{2}\right)\in\mathcal{B}
+\]
+
+\end_inset
+
+ for 
+\begin_inset Formula $X_{1}\cap X_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{1}\times Y_{2}$
+\end_inset
+
+ are open in 
+\begin_inset Formula $X\times Y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+ Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be an open subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ We showed that 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is second countable, and therefore admits a countable basis 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ Any open subset is then the union of elements of 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ We also showed that this union is coutable, as any open or closed interval
+ of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is the countable union of closed and open intervals, respectively.
+ Therefore any open set is the coutable union of open intervals which are
+ themselves the coutable union of closed intervals, thus 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $F_{\sigma}$
+\end_inset
+
+.
+ On the other hand, any closed subset 
+\begin_inset Formula $B$
+\end_inset
+
+ is the countable intersection of open intervals, which themselves are a
+ countable union of open intervals.
+ As such, 
+\begin_inset Formula $B$
+\end_inset
+
+ is 
+\begin_inset Formula $G_{\delta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Basis for a Given Topology
+\end_layout
+
+\begin_layout SmartQuestion
+All are equivalent basis for the euclidean topology on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ be a basis for a topology 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ on a nonempty set 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ a collection of subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+ such that 
+\begin_inset Formula $\mathcal{B}\subseteq\mathcal{B}_{1}\subseteq\mathcal{T}$
+\end_inset
+
+.
+ We start by showing that 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ is the basis for a given topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ It is clear that because it contains a basis of 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ generates 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $B_{1},B_{2}\in\mathcal{B}_{1}$
+\end_inset
+
+.
+ Then we have that 
+\begin_inset Formula $B_{1}=\bigcup_{i\in I}B_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $B_{2}=\bigcup_{j\in J}B_{j}$
+\end_inset
+
+ for families of subsets of 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ and indices 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ and 
+\begin_inset Formula $j\in J$
+\end_inset
+
+.
+ Thus we have
+\begin_inset Formula 
+\[
+B_{1}\cap B_{2}=\left(\bigcup_{i\in I}B_{i}\right)\cap\left(\bigcup_{j\in J}B_{j}\right)=\bigcup_{i\in I}\bigcup_{j\in J}\left(B_{i}\cap B_{j}\right)
+\]
+
+\end_inset
+
+ for 
+\begin_inset Formula $B_{i}\cap B_{j}\in\mathcal{B}\subseteq\mathcal{B}_{1}$
+\end_inset
+
+.
+ Thus every intersection of subsets of 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ is the union of subsets of 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+, so it is the basis for some topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Now it remains to show to show that 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ generate the same topology.
+ Let 
+\begin_inset Formula $B\in\mathcal{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in B\subseteq B\in\mathcal{B}_{1}$
+\end_inset
+
+ because 
+\begin_inset Formula $\mathcal{B}\subseteq\mathcal{B}_{1}$
+\end_inset
+
+.
+ Now consider 
+\begin_inset Formula $B\in\mathcal{B}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $B=\bigcup_{i\in I}B_{i}$
+\end_inset
+
+ for some 
+\begin_inset Formula $B_{i}\in\mathcal{B}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $x\in B_{k}\in\mathcal{B}$
+\end_inset
+
+ for some 
+\begin_inset Formula $k\in I$
+\end_inset
+
+ and hence 
+\begin_inset Formula $x\in B_{k}\subseteq\mathcal{B}$
+\end_inset
+
+.
+ Thus both basis generate the same topology and are equivalent.
+\end_layout
+
+\begin_layout SmartQuestion
+We take as the basis of the euclidean topology 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ the set os intervals with rational limits.
+ To this basis one might add any interval with irrational limits, forming
+ 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\mathcal{B}\subseteq\mathcal{B}_{1}$
+\end_inset
+
+.
+ Then by (a) this is still a basis for the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ As such, we have as many basis as intervals with irrational limits to add
+ to 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ and, as such, uncountably many.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(a,b\right]:a<b\in\mathbb{R}\right\} $
+\end_inset
+
+.
+ Consider the union
+\begin_inset Formula 
+\[
+\bigcup_{i=1}^{n}\left(a-\frac{1}{n},a\right]=\left\{ a\right\} \in\mathcal{T}.
+\]
+
+\end_inset
+
+This implies that every singular subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ belongs to the topology generated by 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ generates the discrete topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ As subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is open in the discrete topology, so is every open interval.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathrm{C}\left[0,1\right]$
+\end_inset
+
+ be the set of all continuous real-valued function on 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{M}=\left\{ M\left(f,\epsilon\right):f\in\mathcal{C}\left[0,1\right],\epsilon>0\in\mathbb{R}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $M\left(f,\epsilon\right)=\left\{ g:g\in\mathrm{C}\left[0,1\right],\int_{0}^{1}\left|f-g\right|<\epsilon\right\} $
+\end_inset
+
+.
+ We have that
+\begin_inset Formula 
+\[
+\mathcal{C}\left[0,1\right]=\bigcup_{f\in\mathrm{C}\left[0,1\right]}M\left(f,1\right).
+\]
+
+\end_inset
+
+Now consider 
+\begin_inset Formula $f,h\in\mathcal{C}\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{1},\epsilon_{2}\in\mathbb{R}$
+\end_inset
+
+.
+ Then for 
+\begin_inset Formula $k\in M\left(f,\epsilon_{1}\right)\cap M\left(h,\epsilon_{2}\right)$
+\end_inset
+
+, we write define
+\begin_inset Formula 
+\[
+\begin{cases}
+d_{1}= & \int_{0}^{1}\left|f-k\right|\\
+d_{2}= & \int_{0}^{1}\left|h-k\right|
+\end{cases}.
+\]
+
+\end_inset
+
+ Setting 
+\begin_inset Formula $\epsilon=\min\left(\epsilon_{1}-d_{1},\epsilon_{2}-d_{2}\right)$
+\end_inset
+
+ we get that for all for any 
+\begin_inset Formula $g\in M\left(k,\epsilon\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|k-g\right|<\epsilon_{1}-\int_{0}^{1}\left|f-k\right|\Longrightarrow\int_{0}^{1}\left|f-g\right|\leq\int_{0}^{1}\left|f-k\right|+\left|k-g\right|<\epsilon_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|k-g\right|<\epsilon_{2}-\int_{0}^{1}\left|h-k\right|\Longrightarrow\int_{0}^{1}\left|h-g\right|\leq\int_{0}^{1}\left|h-k\right|+\left|k-g\right|<\epsilon_{2}
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula $M\left(k,\epsilon\right)\subseteq M\left(f,\epsilon_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $M\left(k,\epsilon\right)\subseteq M\left(h,\epsilon_{2}\right)$
+\end_inset
+
+.
+ Now the union
+\begin_inset Formula 
+\[
+\bigcup_{k\in M\left(f,\epsilon_{1}\right)\cap M\left(h,\epsilon_{2}\right)}M\left(k,\epsilon\right)=M\left(f,\epsilon_{1}\right)\cap M\left(h,\epsilon_{2}\right)
+\]
+
+\end_inset
+
+and we conclude that 
+\begin_inset Formula $\mathcal{M}=\left\{ M\left(f,\epsilon\right):f\in\mathrm{C}\left[0,1\right],\epsilon>0\in\mathbb{R}\right\} $
+\end_inset
+
+ is the basis for some topology on 
+\begin_inset Formula $\mathcal{C}\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{U}=\left\{ U\left(f,\epsilon\right):f\in\mathcal{C}\left[0,1\right],\epsilon>0\in\mathbb{R}\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $U\left(f,\epsilon\right)=\left\{ g:g\in\mathcal{C}\left[0,1\right],\sup_{x\in\left[0,1\right]}\left|f-g\right|<\epsilon\right\} $
+\end_inset
+
+.
+ We have that
+\begin_inset Formula 
+\[
+\mathcal{C}\left[0,1\right]=\bigcup_{f\in\mathcal{C}\left[0,1\right]}U\left(f,1\right).
+\]
+
+\end_inset
+
+Now consider 
+\begin_inset Formula $f,h\in\mathcal{C}\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{1},\epsilon_{2}\in\mathbb{R}$
+\end_inset
+
+.
+ Then for 
+\begin_inset Formula $k\in U\left(f,\epsilon_{1}\right)\cap U\left(h,\epsilon_{2}\right)$
+\end_inset
+
+, we write define
+\begin_inset Formula 
+\[
+\begin{cases}
+d_{1}= & \sup_{x\in\left[0,1\right]}\left|f-k\right|\\
+d_{2}= & \sup_{x\in\left[0,1\right]}\left|h-k\right|
+\end{cases}.
+\]
+
+\end_inset
+
+ Setting 
+\begin_inset Formula $\epsilon=\min\left(\epsilon_{1}-d_{1},\epsilon_{2}-d_{2}\right)$
+\end_inset
+
+ we get that for all for any 
+\begin_inset Formula $g\in U\left(k,\epsilon\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sup_{x\in\left[0,1\right]}\left|k-g\right|<\epsilon_{1}-\sup_{x\in\left[0,1\right]}\left|f-k\right|\Longrightarrow\sup_{x\in\left[0,1\right]}\left|f-g\right|\leq\sup_{x\in\left[0,1\right]}\left|f-k\right|+\sup_{x\in\left[0,1\right]}\left|k-g\right|<\epsilon_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sup_{x\in\left[0,1\right]}\left|k-g\right|<\epsilon_{2}-\sup_{x\in\left[0,1\right]}\left|h-k\right|\Longrightarrow\sup_{x\in\left[0,1\right]}\left|h-g\right|\leq\sup_{x\in\left[0,1\right]}\left|h-k\right|+\sup_{x\in\left[0,1\right]}\left|k-g\right|<\epsilon_{2}
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula $U\left(k,\epsilon\right)\subseteq U\left(f,\epsilon_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $U\left(k,\epsilon\right)\subseteq U\left(h,\epsilon_{2}\right)$
+\end_inset
+
+.
+ Now the union
+\begin_inset Formula 
+\[
+\bigcup_{k\in U\left(f,\epsilon_{1}\right)\cap U\left(h,\epsilon_{2}\right)}U\left(k,\epsilon\right)=U\left(f,\epsilon_{1}\right)\cap U\left(h,\epsilon_{2}\right)
+\]
+
+\end_inset
+
+and we conclude that 
+\begin_inset Formula $\mathcal{U}=\left\{ U\left(f,\epsilon\right):f\in\mathcal{C}\left[0,1\right],\epsilon>0\in\mathbb{R}\right\} $
+\end_inset
+
+ is the basis for some topology on 
+\begin_inset Formula $\mathcal{C}\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+For all 
+\begin_inset Formula $f,g\in\mathcal{C}\left[0,1\right]$
+\end_inset
+
+ we have that
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|f-g\right|\leq\sup_{x\in\left[0,1\right]}\left|f-g\right|.
+\]
+
+\end_inset
+
+Consider 
+\begin_inset Formula $k:\left[0,1\right]\rightarrow\mathbb{R}$
+\end_inset
+
+ such that 
+\begin_inset Formula $k\left(x\right)=f\left(x\right)+x$
+\end_inset
+
+.
+ Then we have that
+\begin_inset Formula 
+\[
+\int_{0}^{1}\left|f-k\right|=\int_{0}^{1}x\mathrm{d}x=\frac{1}{2}<\epsilon_{1}
+\]
+
+\end_inset
+
+so we have that 
+\begin_inset Formula $k\in M\left(f,\epsilon_{1}\right)$
+\end_inset
+
+ for any 
+\begin_inset Formula $\epsilon_{1}>\frac{1}{2}$
+\end_inset
+
+.
+ Now consider
+\begin_inset Formula 
+\[
+\sup_{x\in\left[0,1\right]}\left|f-k\right|=\sup_{x\in\left[0,1\right]}\left|x\right|=1<\epsilon_{2}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $k\in U\left(f,\epsilon_{2}\right)$
+\end_inset
+
+ only if 
+\begin_inset Formula $\epsilon_{2}>1$
+\end_inset
+
+.
+ Thus by taking 
+\begin_inset Formula $\epsilon_{1}=\frac{2}{3}$
+\end_inset
+
+, we have that there exists a function 
+\begin_inset Formula $k=f\left(x\right)+x$
+\end_inset
+
+ such that 
+\begin_inset Formula $k\in M\left(f,\epsilon_{1}\right)$
+\end_inset
+
+ but 
+\begin_inset Formula $k\notin U\left(f,\epsilon_{2}\right)$
+\end_inset
+
+ for any 
+\begin_inset Formula $\epsilon_{2}$
+\end_inset
+
+ such that 
+\begin_inset Formula $U\left(f,\epsilon_{2}\right)\subseteq M\left(f,\epsilon_{1}\right)$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $\mathcal{M}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{U}$
+\end_inset
+
+ generate different topologies on 
+\begin_inset Formula $\mathcal{C}\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Notice that, for 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left(-\infty,b\right)\cap\left(a,\infty\right)=\left(a,b\right)
+\]
+
+\end_inset
+
+ which generate the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ As such, we say that 
+\begin_inset Formula $\mathcal{S}=\left\{ \left(-\infty,a\right):a\in\mathbb{R}\right\} \cup\left\{ \left(a,\infty\right):a\in\mathbb{R}\right\} $
+\end_inset
+
+ are a subbasis of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $X=\left\{ a,b,c,d,e,f\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ c,d\right\} ,\left\{ a,c,d\right\} ,\left\{ b,c,d,e,f\right\} \right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{S}=\left\{ \left\{ a\right\} ,\left\{ a,c,d\right\} ,\left\{ b,c,d,e,f\right\} \right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ is a subbasis of 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ because
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $X=\left\{ a,c,d\right\} \cup\left\{ b,c,d,e,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ a\right\} \in\mathcal{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ c,d\right\} =\left\{ a,c,d\right\} \cap\left\{ b,c,d,e,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ a,c,d\right\} \in\mathcal{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ b,c,d,e,f\right\} \in\mathcal{S}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ be a subbasis for a topology 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ such that closed intervals of the form 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ for 
+\begin_inset Formula $a<b$
+\end_inset
+
+ are contained in 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+.
+ Then, for any 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ we have that for 
+\begin_inset Formula $c<a<b$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left\{ a\right\} =\left[a,b\right]\cap\left[c,a\right]
+\]
+
+\end_inset
+
+ so every singular set is contained in 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+, thus it is the discrete topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Every subset in the cofinite topology is of the form 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ for some finite subset 
+\begin_inset Formula $A=\left\{ x_{1},\dots,x_{n}\right\} $
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+X\setminus A=X\setminus\left(\bigcup_{i=1}^{n}\left\{ x_{i}\right\} \right)=\bigcap_{i=1}^{n}\left(X\setminus\left\{ x_{i}\right\} \right)
+\]
+
+\end_inset
+
+ so every open set 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is an intersection of sets of the 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+, so 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ is a subbasis of the confinite topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider the subbasis 
+\begin_inset Formula $\mathcal{S}=\left\{ A\in X:\left|A\right|=2\right\} .$
+\end_inset
+
+ By intersection of such sets 
+\begin_inset Formula $A$
+\end_inset
+
+ we get all singleton sets, and therefore generate the discrete topology
+ on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The intersection of straight lines can be either empty, a line, or a single
+ point.
+ As such, we have that all singular points are an intersection of elements
+ of the subbasis, and as such, the topology generated by all straight lines
+ in 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ is the discrete topology.
+\end_layout
+
+\begin_layout SmartQuestion
+The open sets in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ are the empty set, straight lines parallel to the x axis, and unions of
+ these lines.
+ By arbitrary unions of these lines, one may create regions of the form
+\begin_inset Formula 
+\[
+S=\left\{ \left(x,y\right)\in\mathbb{R}^{2}:a<y<b\right\} 
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $a,b\in\mathbb{R}\cup\left\{ -\infty,\infty\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The circles in the plane may intersect at only one point.
+ As such, we have the the topology generated by 
+\begin_inset Formula $\mathcal{S}$
+\end_inset
+
+ is the discrete topology on 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Intersections go brrrrr.
+\end_layout
+
+\begin_layout Section
+Limit Points
+\end_layout
+
+\begin_layout Subsection
+Limit Points and Closure
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\left\{ a,b,c,d,e,f\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ c,d\right\} ,\left\{ a,c,d\right\} ,\left\{ b,c,d,e\right\} \right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+The limit points are
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ a\right\} '=\left\{ f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ b,c\right\} '=\left\{ b,d,e,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ a,c,d\right\} '=\left\{ b,c,d,e,f\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left\{ b,c,e,f\right\} '=\left\{ b,d,e\right\} .$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+The closures are
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ a\right\} }=\left\{ a,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ b,c\right\} }=\left\{ b,c,d,e\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ a,c,d\right\} }=X$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ b,c,e,f\right\} }=\left\{ b,c,d,e,f\right\} .$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Alternatively, we have that the closed sets of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ are 
+\begin_inset Formula $\left\{ X,\emptyset,\left\{ b,c,d,e,f\right\} ,\left\{ a,b,e,f\right\} ,\left\{ a,f\right\} \right\} $
+\end_inset
+
+.
+ We now select the smallest containing such elements to find the closure.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ a\right\} }=\left\{ a,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ b,c\right\} }=\left\{ b,c,d,e,f\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ a,c,d\right\} }=X$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ b,c,e,f\right\} }=\left\{ b,c,d,e,f\right\} .$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(\mathbb{Z},\mathcal{T}\right)$
+\end_inset
+
+ be the of integers with the cofinite topology.
+ We have that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ 1,2,3,\dots,10\right\} }=\left\{ 1,2,3,\dots,10\right\} $
+\end_inset
+
+ as it is the smallest closed set that contains the elements up to 1 to
+ 10.
+ So there are no limit points other than these elements.
+ We need only check if any of these elements are limit points.
+ Let 
+\begin_inset Formula $a\in\left\{ 1,\dots,10\right\} $
+\end_inset
+
+, then the set 
+\begin_inset Formula $\left\{ a\right\} \cup\left(11,12,\dots\right)$
+\end_inset
+
+ is open but intersects 
+\begin_inset Formula $\left\{ 1,2,3,\dots,10\right\} $
+\end_inset
+
+ only on 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+.
+ Hence 
+\begin_inset Formula $\left\{ 1,2,3,\dots,10\right\} '=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $E=2\mathbb{Z}$
+\end_inset
+
+ be the set of even integers.
+ Let 
+\begin_inset Formula $a\in E$
+\end_inset
+
+.
+ Considering the set 
+\begin_inset Formula $\left\{ 2n+1:n\in\mathbb{Z}\right\} \cup\left(a\right)$
+\end_inset
+
+ we have an open set that intersects 
+\begin_inset Formula $E$
+\end_inset
+
+ only at 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $a$
+\end_inset
+
+ is arbitrary, we conclude that 
+\begin_inset Formula $E'=\emptyset$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
