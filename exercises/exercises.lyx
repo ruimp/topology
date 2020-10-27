@@ -4865,5 +4865,364 @@ Let
 \end_layout
 
 \end_deeper
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $x\in\left(a,b\right)$
+\end_inset
+
+.
+ Take any open 
+\begin_inset Formula $A$
+\end_inset
+
+ set that intersects 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ at x.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is open, it is the union of open intervals, and as such, 
+\begin_inset Formula $x$
+\end_inset
+
+ is contained in at least one of them.
+ Without loss of generality, we take this interval to be of the form 
+\begin_inset Formula $\left(c,d\right)$
+\end_inset
+
+.
+ Now consider the set 
+\begin_inset Formula $S=\left(\max\left(c,a\right),\min\left(d,b\right)\right)$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $S\subseteq A\cap\left(c,d\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $x\in S$
+\end_inset
+
+.
+ As such, every open set that that contains 
+\begin_inset Formula $x$
+\end_inset
+
+ intersects 
+\begin_inset Formula $A$
+\end_inset
+
+ at other point.
+ Thus every point in 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is a limit point of 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Now consider the points 
+\begin_inset Formula $a,b$
+\end_inset
+
+.
+ By an analogous resoning to before, the set 
+\begin_inset Formula $S=\left[a,\min\left(d,b\right)\right)$
+\end_inset
+
+ is contained in 
+\begin_inset Formula $\left(c,d\right)$
+\end_inset
+
+ and contains 
+\begin_inset Formula $a$
+\end_inset
+
+, and 
+\begin_inset Formula $S=\left(\max\left(c,a\right),b\right]$
+\end_inset
+
+ is contained in 
+\begin_inset Formula $\left(c,b\right)$
+\end_inset
+
+ and contains 
+\begin_inset Formula $b$
+\end_inset
+
+, both intersecting 
+\begin_inset Formula $A$
+\end_inset
+
+ at a point different other than 
+\begin_inset Formula $a$
+\end_inset
+
+ or 
+\begin_inset Formula $b$
+\end_inset
+
+, respectively.
+ Hence 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are limit points of 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+The smallest closed set that contains 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+ As such, we conclude that 
+\begin_inset Formula $\left(a,b\right)'=\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+The closure of the following sets is
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\left\{ 1,\frac{1}{2},\frac{1}{3},\dots,\frac{1}{n},\dots\right\} }=\left\{ 0\right\} \cup\left\{ 1,\frac{1}{2},\frac{1}{3},\dots,\frac{1}{n},\dots\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\mathbb{Z}}=\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\mathbb{R}\setminus\mathbb{Q}}=\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $S\subseteq\mathbb{R}$
+\end_inset
+
+ be nonempty and 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Suppose that 
+\begin_inset Formula $a\in\overline{S}$
+\end_inset
+
+.
+ Then either 
+\begin_inset Formula $a\in S$
+\end_inset
+
+ or 
+\begin_inset Formula $a\in S'$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a\in S$
+\end_inset
+
+ then by choosing 
+\begin_inset Formula $x_{n}=a\in S$
+\end_inset
+
+ we have 
+\begin_inset Formula $\left|x_{n}-a\right|=0<\frac{1}{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $a\in S'$
+\end_inset
+
+, then every open set 
+\begin_inset Formula $A$
+\end_inset
+
+ that intersects 
+\begin_inset Formula $S$
+\end_inset
+
+ at 
+\begin_inset Formula $a$
+\end_inset
+
+ also does at a different point.
+ We know 
+\begin_inset Formula $\overline{S}$
+\end_inset
+
+ is smallest closed set that contains 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $a\in\left[c,d\right]$
+\end_inset
+
+ for some 
+\begin_inset Formula $c<d\in\mathbb{R}$
+\end_inset
+
+.
+ If we took 
+\begin_inset Formula $c=d=a$
+\end_inset
+
+ it then 
+\begin_inset Formula $a\in S$
+\end_inset
+
+ or 
+\begin_inset Formula $a$
+\end_inset
+
+ would be an isolated limit point, which is a contradiction in the euclidean
+ topology (for we could find an open 
+\begin_inset Formula $\left(a-\epsilon,a+\epsilon\right)$
+\end_inset
+
+ that would intersect 
+\begin_inset Formula $S$
+\end_inset
+
+ only at 
+\begin_inset Formula $a$
+\end_inset
+
+).
+ Let 
+\begin_inset Formula $B=\left(a-\frac{1}{n},a+\frac{1}{n}\right)$
+\end_inset
+
+.
+ Then for some 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $B\in\left(c,d\right)$
+\end_inset
+
+.
+ Hence for all 
+\begin_inset Formula $x\in S$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+a-\frac{1}{n}<x<a+\frac{1}{n}\Longrightarrow\left|x-a\right|<\frac{1}{n}.
+\]
+
+\end_inset
+
+Now suppose that for we have 
+\begin_inset Formula $x_{n}\in S$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|x_{n}-a\right|<\frac{1}{n}$
+\end_inset
+
+.
+ Then either 
+\begin_inset Formula $a\in S$
+\end_inset
+
+, so 
+\begin_inset Formula $x_{n}=a$
+\end_inset
+
+, or 
+\begin_inset Formula $a\in S'$
+\end_inset
+
+, because any open subset 
+\begin_inset Formula $K$
+\end_inset
+
+ contains an open interval of the form 
+\begin_inset Formula $a\in\left(c,d\right)$
+\end_inset
+
+ so if we choose 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\frac{1}{k}<\min\left(\left|a-c\right|,\left|a-d\right|\right)$
+\end_inset
+
+, the point 
+\begin_inset Formula $x_{k}\neq a\in S\cap K$
+\end_inset
+
+ and thus 
+\begin_inset Formula $a\in S'$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
