@@ -6934,7 +6934,170 @@ Let
 \begin_inset Formula $B$
 \end_inset
 
- are nontrivial clopen 
+ are nontrivial clopen sets.
+ Hence 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is not connected.
+ Now supposed that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is connected but no such subsets exist.
+ From the connectedness property we know there exists a nonempty proper
+ clopen subset 
+\begin_inset Formula $C\subset X$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $C$
+\end_inset
+
+ is closed, we have that 
+\begin_inset Formula $X\setminus C=D\neq\emptyset$
+\end_inset
+
+ is open.
+ Because 
+\begin_inset Formula $C$
+\end_inset
+
+ is open it follows that 
+\begin_inset Formula $X\setminus C=D$
+\end_inset
+
+ is closed.
+ So there exist two nonempty disjoint subsets 
+\begin_inset Formula $C,D$
+\end_inset
+
+ that are clopen, which is a contradiction.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\left\{ a,b,c,d,e,f\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ c,d\right\} ,\left\{ a,c,d\right\} ,\left\{ b,c,d,e,f\right\} \right\} $
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $\left\{ a\right\} \in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $X\setminus\left\{ a\right\} =\left\{ b,c,d,e,f\right\} \in\mathcal{T}$
+\end_inset
+
+ so 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+ is a nontrivial clopen set, thus 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is not connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be an infinite topological space with the cofinite topology.
+ Then all the nontrivial closed sets 
+\begin_inset Formula $A$
+\end_inset
+
+ are finite, and the open sets 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ infinite.
+ Consequently, there are no trivial clopen sets, so 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $X=\mathbb{Z}$
+\end_inset
+
+ with the countable-closed topology.
+ Then the set 
+\begin_inset Formula $2\mathbb{Z}$
+\end_inset
+
+ is countable and therefore closed, and 
+\begin_inset Formula $\mathbb{Z}\setminus2\mathbb{Z}$
+\end_inset
+
+ is also countable and therefore open.
+ As such, 
+\begin_inset Formula $2\mathbb{Z}$
+\end_inset
+
+ is a nontrivial clopen set of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+, so the topological space is not connected.
+\end_layout
+
+\begin_layout SmartQuestion
+All of them are connected.
+ None of the sets of the form 
+\begin_inset Formula $\left(-r,r\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left[-r,r\right]$
+\end_inset
+
+ are closed, because their reciprocals are of the form 
+\begin_inset Formula $\left(-\infty,r\right)\cup\left(r,\infty\right)$
+\end_inset
+
+ or the closed equivalent, which are not open in these topologies.
+\end_layout
+
+\begin_layout Section
+Subspaces
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\left\{ a,b,c,d,e\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset,\left\{ a\right\} ,\left\{ a,b\right\} ,\left\{ a,c,d\right\} ,\left\{ a,b,c,d\right\} ,\left\{ a,b,e\right\} \right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $Y=\left\{ a,c,e\right\} $
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+\mathcal{T}_{Y}=\left\{ Y,\emptyset,\right\} 
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
