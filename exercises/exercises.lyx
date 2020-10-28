@@ -4835,30 +4835,21 @@ Let
 \end_inset
 
  be the set of even integers.
- Let 
-\begin_inset Formula $a\in E$
+ Any open set in 
+\begin_inset Formula $\left(\mathbb{Z},\mathcal{T}\right)$
 \end_inset
 
-.
- Considering the set 
-\begin_inset Formula $\left\{ 2n+1:n\in\mathbb{Z}\right\} \cup\left(a\right)$
-\end_inset
-
- we have an open set that intersects 
+ contains infinite even numbers.
+ As such any open set intersects 
 \begin_inset Formula $E$
 \end_inset
 
- only at 
-\begin_inset Formula $a$
+ for some 
+\begin_inset Formula $n\in E$
 \end_inset
 
-.
- Because 
-\begin_inset Formula $a$
-\end_inset
-
- is arbitrary, we conclude that 
-\begin_inset Formula $E'=\emptyset$
+, so 
+\begin_inset Formula $E'=\mathbb{Z}$
 \end_inset
 
 .
@@ -5213,7 +5204,7 @@ Now suppose that for we have
 \end_inset
 
 , the point 
-\begin_inset Formula $x_{k}\neq a\in S\cap K$
+\begin_inset Formula $a\neq x_{n}\in S\cap K$
 \end_inset
 
  and thus 
@@ -5224,5 +5215,1727 @@ Now suppose that for we have
 \end_layout
 
 \end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $S\subseteq T\subseteq X$
+\end_inset
+
+ be nonempty.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $p$
+\end_inset
+
+ be a limit point of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Then for all 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+ that intersects 
+\begin_inset Formula $S$
+\end_inset
+
+ at 
+\begin_inset Formula $p$
+\end_inset
+
+ there exists some 
+\begin_inset Formula $c\in S$
+\end_inset
+
+ such that 
+\begin_inset Formula $c\in S\cap A$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $c\in S\subseteq T\Rightarrow c\in T$
+\end_inset
+
+ hence every such set 
+\begin_inset Formula $A$
+\end_inset
+
+ intersects 
+\begin_inset Formula $T$
+\end_inset
+
+ at 
+\begin_inset Formula $c$
+\end_inset
+
+ so 
+\begin_inset Formula $p\in T'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+From (a) we have that 
+\begin_inset Formula $S'\subseteq T'$
+\end_inset
+
+.
+ As such 
+\begin_inset Formula $S\cup S'\subseteq T\cup T'\Leftrightarrow\overline{S}\subseteq\overline{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $S$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+ if 
+\begin_inset Formula $\overline{S}=X$
+\end_inset
+
+.
+ Then we have 
+\begin_inset Formula $\overline{S}=X\subseteq\overline{T}\subseteq X$
+\end_inset
+
+ which implies that 
+\begin_inset Formula $T$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\overline{\mathbb{Q}}=\mathbb{R}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ As such, any union of the type 
+\begin_inset Formula $\mathbb{Q}\cup\left(x\right)$
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in\mathbb{R}\setminus\mathbb{Q}$
+\end_inset
+
+ is dense.
+ Because there are unbountably many such sets, we conclude that there exist
+ uncountably many dense subsets of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The example from (d) shows that there exist an uncountable number of countable
+ dense subsets of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Now we also have that 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Now for some subset 
+\begin_inset Formula $Q\in\mathbb{Q}$
+\end_inset
+
+, we have that 
+\begin_inset Formula $\mathbb{I}\cup Q$
+\end_inset
+
+ is sense in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is countable, let us denote 
+\begin_inset Formula $M$
+\end_inset
+
+ the number of possible distinct choices of 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ The intended result follows by considering the possibities for this choice.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B$
+\end_inset
+
+ be subsets of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+ Consider the sets 
+\begin_inset Formula $A\cap\overline{B}$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{A}\cap B$
+\end_inset
+
+, 
+\begin_inset Formula $\overline{A}\cap\overline{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{A\cap B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A=\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\mathbb{I}$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $A\cap\overline{B}=\mathbb{Q}\cap\mathbb{R}=\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap B=\mathbb{R}\cap\mathbb{I}=\mathbb{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap\overline{B}=\mathbb{R}\cap\mathbb{R}=\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A\cap B}=\overline{\mathbb{Q}\cap\mathbb{I}}=\overline{\emptyset}=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B$
+\end_inset
+
+ be open intervals in 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Without loss of generality, we have 
+\begin_inset Formula $A=\left(a,c\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\left(b,d\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a<c\in\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $b<d\mathbb{\in\mathbb{R}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $A\cap\overline{B}=\left(a,c\right)\cap\left[b,d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap B=\left[a,c\right]\cap\left(b,d\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap\overline{B}=\left[a,c\right]\cap\left[b,d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A\cap B}=\overline{\left(a,c\right)\cap\left(b,d\right)}$
+\end_inset
+
+ which is equal to either (i), (ii) or (iii).
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A=\left(0,1\right)\cup\left(2,3\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\left(1,2\right)\cup\left(3,4\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $A\cap\overline{B}=\left(0,4\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap B=\left[0,2\right)\cup\left(2,4\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A}\cap\overline{B}=\left[0,4\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{A\cap B}=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Neighbourhoods
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a subset of a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then every point 
+\begin_inset Formula $x\in X\setminus A$
+\end_inset
+
+ is contained in 
+\begin_inset Formula $A'$
+\end_inset
+
+, so it is a limit point of 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ As such, every neighbourhood intersects 
+\begin_inset Formula $A$
+\end_inset
+
+ non-trivially at some point 
+\begin_inset Formula $c$
+\end_inset
+
+ other than 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Now suppose that every neighbourhood of each point 
+\begin_inset Formula $x\in X\setminus A$
+\end_inset
+
+ intersects 
+\begin_inset Formula $A$
+\end_inset
+
+ non-trivially.
+ Because every open set containing 
+\begin_inset Formula $x$
+\end_inset
+
+ is a neighbourhood of 
+\begin_inset Formula $x$
+\end_inset
+
+, we have that every open set intersecting 
+\begin_inset Formula $A$
+\end_inset
+
+ at 
+\begin_inset Formula $x$
+\end_inset
+
+ also does at another point.
+ As such, we have that 
+\begin_inset Formula $A'=X\setminus A$
+\end_inset
+
+ .
+ Hence 
+\begin_inset Formula $\overline{A}=A\cup A'=X$
+\end_inset
+
+ so 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+ is dense.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B$
+\end_inset
+
+ be subsets of a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $A\subseteq\overline{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $B\subseteq\overline{B}$
+\end_inset
+
+.
+ It follows that 
+\begin_inset Formula $A\cap B\subseteq\overline{A}\cap\overline{B}$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\overline{A\cap B}$
+\end_inset
+
+ is the smallest closed subset containing 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+, and the intersection 
+\begin_inset Formula $\overline{A}\cap\overline{B}$
+\end_inset
+
+ is closed, it follows that 
+\begin_inset Formula $\overline{A\cap B}\subseteq\overline{A}\cap\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+ Taking 
+\begin_inset Formula $A=\left(0,1\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\left(1,2\right)$
+\end_inset
+
+ we have that 
+\begin_inset Formula $\overline{A\cap B}=\emptyset$
+\end_inset
+
+ but 
+\begin_inset Formula $\overline{A}\cap\overline{B}=\left[0,2\right]$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+ Suppose that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is a 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ space and every infinite subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ it follows that every singleton subset 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ for 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ is closed.
+ Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be an infinite subset of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense, so the smallest closed set that contains 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is arbitrary, we have that the only infinite closed set is 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ From the fact that the finite union of singleton sets is closed, it follows
+ that every finite subset of 
+\begin_inset Formula $X$
+\end_inset
+
+ is closed.
+ Thus 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the cofinite topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Now suppose that 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is the cofinite topology on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $A=X\setminus\left\{ x\right\} $
+\end_inset
+
+ for some 
+\begin_inset Formula $x\in X$
+\end_inset
+
+.
+ With 
+\begin_inset Formula $X$
+\end_inset
+
+ begin finite every finite set is open.
+ If 
+\begin_inset Formula $X$
+\end_inset
+
+ is infinite, then 
+\begin_inset Formula $A$
+\end_inset
+
+ is infinite.
+ In any way 
+\begin_inset Formula $A$
+\end_inset
+
+ is open.
+ From the arbitrariness of 
+\begin_inset Formula $A$
+\end_inset
+
+ it follows that every singleton set 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ is closed, and as such 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+ Now suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is an infinite subset of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is not dense, then there exists a closed set 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\subseteq B\subseteq X$
+\end_inset
+
+.
+ As in the cofinite topology the only infinite open set is 
+\begin_inset Formula $X$
+\end_inset
+
+, we have that 
+\begin_inset Formula $B=X$
+\end_inset
+
+ so 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We consider if the following spaces are separable:
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\overline{\mathbb{Q}}=\mathbb{R}$
+\end_inset
+
+ so 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is separable.
+\end_layout
+
+\begin_layout SmartQuestion
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is countable then 
+\begin_inset Formula $\overline{X}=X$
+\end_inset
+
+, so 
+\begin_inset Formula $X$
+\end_inset
+
+ is separable.
+\end_layout
+
+\begin_layout SmartQuestion
+In the cofinite topology any infinite subset is dense.
+ If 
+\begin_inset Formula $X$
+\end_inset
+
+ is countable then it is separable.
+\end_layout
+
+\begin_layout SmartQuestion
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is finite, then 
+\begin_inset Formula $\overline{X}=X$
+\end_inset
+
+ is a dense countable subset of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $X$
+\end_inset
+
+ is countable.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}=\left(A_{1},\dots,A_{n}\right)$
+\end_inset
+
+.
+ Then taking 
+\begin_inset Formula $a_{i}\in A_{i}$
+\end_inset
+
+ we get 
+\begin_inset Formula $A=\left\{ a_{i}\in A_{i}:i\in I\right\} $
+\end_inset
+
+ for some finite family.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ is countable.
+ For any open set 
+\begin_inset Formula $U\in\mathcal{T}$
+\end_inset
+
+ we have that 
+\begin_inset Formula $U\cap A=A_{i}\cap A\neq\emptyset$
+\end_inset
+
+, so 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the discrete topology.
+ Then only dense set is 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Thus it is not a separable space.
+\end_layout
+
+\begin_layout SmartQuestion
+In the cofinite topology every infinite subset is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ As such, any countable infinite subset is dense, so 
+\begin_inset Formula $X$
+\end_inset
+
+ is separable.
+\end_layout
+
+\begin_layout SmartQuestion
+If 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is second countable, then there exists a countable basis of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Let this basis be 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $X=\bigcup_{i\in I}B_{i}$
+\end_inset
+
+ for a countable family 
+\begin_inset Formula $i\in I$
+\end_inset
+
+ of 
+\begin_inset Formula $B_{i}\in\mathcal{B}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x_{i}\in B_{i}$
+\end_inset
+
+.
+ Then consider 
+\begin_inset Formula $A=\bigcup_{i\in I}\left\{ x_{i}\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ is countable.
+ Then let 
+\begin_inset Formula $U\in\mathcal{T}\setminus\emptyset$
+\end_inset
+
+.
+ Then because 
+\begin_inset Formula $U$
+\end_inset
+
+ is the union of elements of the basis, we have that 
+\begin_inset Formula $U\cap A\neq0$
+\end_inset
+
+, so 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+We consider the following interiors:
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+In 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology, then 
+\begin_inset Formula $\text{Int}\left(\left[0,1\right]\right)=\left(0,1\right)$
+\end_inset
+
+ because for 
+\begin_inset Formula $c<d\in\left(0,1\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $\left(c,d\right)\in\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $\bigcup_{c,d\in\left(0,1\right)}\left(c,d\right)=\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+In 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology, then 
+\begin_inset Formula $\text{Int}\left(\left(3,4\right)\right)=\left(3,4\right)$
+\end_inset
+
+.
+ Proof is analogous to before.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be open.
+ Then the biggest open set containing 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+In 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology, then 
+\begin_inset Formula $\text{Int}\left(\left\{ 3\right\} \right)=\emptyset$
+\end_inset
+
+ for 
+\begin_inset Formula $\left\{ 3\right\} $
+\end_inset
+
+ contains no open sets.
+\end_layout
+
+\begin_layout SmartQuestion
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is equiped with the indiscrete topology, then for any 
+\begin_inset Formula $A\subset X$
+\end_inset
+
+ we have that the smallest open set containing 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, as the only open sets are 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that if a subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is countable, then it is not an interval (nor the union of intervals).
+ As such, it contains no open sets, and thus 
+\begin_inset Formula $\text{Int}\left(A\right)=\emptyset$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is a topological space.
+ We have that 
+\begin_inset Formula $\overline{X\setminus A}$
+\end_inset
+
+ is the smallest closed set not containing 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ As such, we have that 
+\begin_inset Formula $X\setminus\left(\overline{X\setminus A}\right)$
+\end_inset
+
+ is open.
+ We aim to show that it is the biggest such set contained in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Suppose that there exists an open set 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\in X\setminus\left(\overline{X\setminus A}\right)\subseteq B$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X\setminus B\subseteq\overline{X\setminus A}$
+\end_inset
+
+ is smaller than 
+\begin_inset Formula $\overline{X\setminus A}$
+\end_inset
+
+ which is a contradiction.
+ As such, 
+\begin_inset Formula $X\setminus\left(\overline{X\setminus A}\right)$
+\end_inset
+
+ is the biggest open set contained in 
+\begin_inset Formula $A$
+\end_inset
+
+ and as such 
+\begin_inset Formula $\text{Int}\left(A\right)=X\setminus\left(\overline{X\setminus A}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is a topological space.
+ Suppose that 
+\begin_inset Formula $\text{Int}\left(X\setminus A\right)=\emptyset$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\text{Int}\left(X\setminus A\right)=X\setminus\overline{A}=\emptyset\Longrightarrow\overline{A}=X
+\]
+
+\end_inset
+
+ so 
+\begin_inset Formula $A$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Now suppose that 
+\begin_inset Formula $\text{Int}\left(X\setminus A\right)=B\neq\emptyset$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $X\setminus\overline{A}=B\Rightarrow\overline{A}=X\setminus B\neq X$
+\end_inset
+
+ so 
+\begin_inset Formula $A$
+\end_inset
+
+ is not dense in 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $A_{1},A_{2}\subseteq X$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\text{Int}\left(A_{1}\cap A_{2}\right)=X\setminus\left[\overline{X\setminus\left(A_{1}\cap A_{2}\right)}\right]=X\setminus\left[\overline{\left(X\setminus A_{1}\right)\cup\left(X\setminus A_{2}\right)}\right]=X\setminus\left[\overline{\left(X\setminus A_{1}\right)}\cup\overline{\left(X\setminus A_{2}\right)}\right]=\left[X\setminus\overline{\left(X\setminus A_{1}\right)}\right]\cap\left[X\setminus\overline{\left(X\setminus A_{2}\right)}\right]=\text{Int}\left(A_{1}\right)\cap\text{Int}\left(A_{2}\right)$
+\end_inset
+
+ by using (c).
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+ Let 
+\begin_inset Formula $A_{1}=\left[0,1\right]$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}=\left[1,2\right]$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\text{Int}\left(A_{1}\cup A_{2}\right)=\left(0,2\right)$
+\end_inset
+
+ but 
+\begin_inset Formula $\text{Int}\left(A_{1}\right)\cup\text{Int}\left(A_{2}\right)=\left(0,1\right)\cup\left(1,2\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $A\subseteq A\cup B\Rightarrow\overline{A}\subseteq\overline{A\cup B}$
+\end_inset
+
+ and 
+\begin_inset Formula $B\subseteq A\cup B\Rightarrow\overline{B}\subseteq\overline{A\cup B}$
+\end_inset
+
+ so 
+\begin_inset Formula $\overline{A}\cup\overline{B}\subseteq\overline{A\cup B}$
+\end_inset
+
+.
+ Now notice that 
+\begin_inset Formula $\overline{A\cup B}$
+\end_inset
+
+ is smallest subset containing 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\overline{A}\cup\overline{B}$
+\end_inset
+
+ is closed and contains 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $\overline{A\cup B}\subseteq\overline{A}\cup\overline{B}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\overline{A\cup B}=\overline{A}\cup\overline{B}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a dense subset of a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $U\subseteq\mathcal{T}$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $S\cap U\subseteq U\Rightarrow\overline{S\cap U}\subseteq\overline{U}$
+\end_inset
+
+.
+ Now let 
+\begin_inset Formula $u\in\overline{U}$
+\end_inset
+
+ and 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $u\in A$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $U$
+\end_inset
+
+ is open, then 
+\begin_inset Formula $U\cap A$
+\end_inset
+
+ is open.
+ Thus 
+\begin_inset Formula $S\cap\left(U\cap A\right)\neq0\Leftrightarrow\left(S\cap U\right)\cap A\neq0$
+\end_inset
+
+, that is, for every open set 
+\begin_inset Formula $A$
+\end_inset
+
+ containing 
+\begin_inset Formula $u$
+\end_inset
+
+, we have that that the intersection with 
+\begin_inset Formula $S$
+\end_inset
+
+ contains a point of 
+\begin_inset Formula $S\cap U$
+\end_inset
+
+.
+ As such, we conclude that 
+\begin_inset Formula $u\in\overline{S\cap U}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\overline{U}=\overline{S\cap U}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+By direct application of (9), we have that 
+\begin_inset Formula $\overline{S\cap T}=\overline{S}=X$
+\end_inset
+
+, and thus 
+\begin_inset Formula $\overline{S\cap T}$
+\end_inset
+
+ is dense in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{B}=\left\{ \left[a,b\right):a\in\mathbb{R},b\in\mathbb{Q},a<b\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\mathbb{R}=\bigcup_{n\in\mathbb{Z}}\left[n-1,n+1\right)$
+\end_inset
+
+.
+ Additionaly let have that for 
+\begin_inset Formula $A_{1}=\left[a_{1},b_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $A_{2}=\left[a_{2},b_{2}\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+A_{1}\cap A_{2}=\begin{cases}
+\emptyset & ;\text{ if disjoint}\\
+\left[\max\left(a_{1},a_{2}\right),\min\left(b_{1},b_{2}\right)\right) & ;\text{ otherwise}
+\end{cases}\in\mathcal{T}_{1}.
+\]
+
+\end_inset
+
+Hence 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ is the basis of some topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ be the basis of the euclidean topology on 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ composed by open intervals with rational limits.
+ Then for any 
+\begin_inset Formula $\left(a,b\right)\in\mathcal{C}$
+\end_inset
+
+ there exists 
+\begin_inset Formula $\left[a,b\right)\in\mathcal{B}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left(a,b\right)\subseteq\left[a,b\right)$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $\left[a,b\right)\notin\mathcal{T}$
+\end_inset
+
+ we conclude that 
+\begin_inset Formula $T\subset\mathcal{T}_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A=\left[a,b\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $\bigcup_{i=1}^{\infty}\left[a,\left\lfloor 10^{n}b\right\rfloor 10^{-n}\right)=\left[a,b\right)$
+\end_inset
+
+ so the it is open.
+ Additionally 
+\begin_inset Formula $\mathbb{R}\setminus\left[a,b\right)=\left(-\infty,a\right)\cup\left[b,\infty\right)$
+\end_inset
+
+ which may be written as a union of the form 
+\begin_inset Formula 
+\[
+\left[\bigcup_{i=1}^{\infty}\left[-n,\left\lfloor 10^{n}a\right\rfloor 10^{-n}\right)\right]\cup\left[\bigcup_{i=1}^{\infty}\left[b,n\right)\right]
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $A$
+\end_inset
+
+ is clopen in 
+\begin_inset Formula $\left(\mathbb{R},\mathcal{T}_{1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Notice that any open set of the form 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a<b$
+\end_inset
+
+ contains rational elements.
+ As such, similarly to 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, we have 
+\begin_inset Formula $\overline{\mathbb{Q}}=\mathbb{R}$
+\end_inset
+
+ so the set of all rationals is dense.
+\end_layout
+
+\begin_layout SmartQuestion
+Because intervals of the form 
+\begin_inset Formula $\text{\left[a,b\right)}$
+\end_inset
+
+ for irrational 
+\begin_inset Formula $a$
+\end_inset
+
+ can not be generated by the union of intervals with rational limits, it
+ follows that sets of form such form are contained in any basis of the topologic
+al space.
+ As such, any basis is uncountable so the Sorgenfrey Line is not second
+ countable.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Connectedness
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $S$
+\end_inset
+
+ be a set of real numbers and 
+\begin_inset Formula $T=\left\{ x:-x\in S\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $b=-a$
+\end_inset
+
+ be the supremum of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Then we have that for all 
+\begin_inset Formula $t\in T$
+\end_inset
+
+, 
+\begin_inset Formula $t\leq b$
+\end_inset
+
+.
+ Thus for any 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ we have that
+\begin_inset Formula 
+\[
+t\leq b\Longleftrightarrow-x\leq-a\Longleftrightarrow x\geq a
+\]
+
+\end_inset
+
+that is, 
+\begin_inset Formula $\sup\left(S\right)=a$
+\end_inset
+
+.
+ Now assume that 
+\begin_inset Formula $b$
+\end_inset
+
+ is not the supremum of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\exists t\in T:t>b\Longrightarrow\exists x\in S:-x>-a\Leftrightarrow x<a$
+\end_inset
+
+, that is, 
+\begin_inset Formula $a$
+\end_inset
+
+ is not the infimum of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+By using the properties discussed in (a), and the fact that any nonempty
+ subset of 
+\begin_inset Formula $S\subset\mathbb{R}$
+\end_inset
+
+ admits a reciprocal 
+\begin_inset Formula $T=\left\{ x:-x\in S\right\} $
+\end_inset
+
+, it follows that any real set 
+\begin_inset Formula $S$
+\end_inset
+
+ has an infimum element 
+\begin_inset Formula $s$
+\end_inset
+
+ such that 
+\begin_inset Formula $\forall x\in S:x\geq s$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+We find the greatest element and the least upper bound of the following
+ sets:
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $S=\mathbb{R}$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ we have that 
+\begin_inset Formula $s+1\in S$
+\end_inset
+
+ so there exist no greatest element nor least upper bound of 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $S=\mathbb{Z}$
+\end_inset
+
+.
+ Analogous to (a).
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $S=\left[9,10\right)$
+\end_inset
+
+.
+ Consider 
+\begin_inset Formula $s_{n}=10-\frac{1}{n}$
+\end_inset
+
+.
+ Then we have a monotonous increasing sequence of element os 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $S$
+\end_inset
+
+ admits no greater element but has a least upper bound of 
+\begin_inset Formula $x=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $S=\left\{ 1-\frac{3}{n^{2}}:n\in\mathbb{N}\right\} $
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+.
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Analogous to (c), we have that 
+\begin_inset Formula $S$
+\end_inset
+
+ admits no greatest element, but has a least upper bound of 
+\begin_inset Formula $x=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $S=\left(-\infty,3\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ has a greatest element 
+\begin_inset Formula $x=3$
+\end_inset
+
+ that coincides with its least upper bound.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+ Assum there exist two disjoint nonempty sets 
+\begin_inset Formula $A,B\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\cup B=X$
+\end_inset
+
+.
+ As such we have that 
+\begin_inset Formula $X\setminus A=B$
+\end_inset
+
+ and 
+\begin_inset Formula $X\setminus B=A$
+\end_inset
+
+ so both 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are nontrivial clopen 
+\end_layout
+
 \end_body
 \end_document
