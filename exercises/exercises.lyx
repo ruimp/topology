@@ -7092,12 +7092,47 @@ Let
  Thus
 \begin_inset Formula 
 \[
-\mathcal{T}_{Y}=\left\{ Y,\emptyset,\right\} 
+\mathcal{T}_{Y}=\left\{ Y,\emptyset,\left\{ a\right\} ,\left\{ a,c\right\} ,\left\{ a,e\right\} \right\} 
 \]
 
 \end_inset
 
+and analogously for 
+\begin_inset Formula $Z$
+\end_inset
 
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology.
+ The topology induces on 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ is the discrete topology.
+ Consider 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A=\left(n-1,n+1\right)\in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cap\mathbb{N}=\left\{ n\right\} $
+\end_inset
+
+, so every singular set is in 
+\begin_inset Formula $\mathcal{T}_{\mathbb{N}}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
