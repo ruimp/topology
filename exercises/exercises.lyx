@@ -7139,5 +7139,1902 @@ Consider
 .
 \end_layout
 
+\begin_layout SmartQuestion
+Consider the usual topology on the following subsets:
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left[a,b\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left(a,b\right)\right\} \cup\left\{ \left[a,x\right):x\in\left(a,b\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left(a,b\right]$
+\end_inset
+
+ for 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left(a,b\right)\right\} \cup\left\{ \left(x,b\right]:x\in\left(a,b\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left(-\infty,a\right]$
+\end_inset
+
+ for 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left(-\infty,a\right)\right\} \cup\left\{ \left(x,a\right]:x\in\left(-\infty,a\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left(-\infty,a\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left(-\infty,a\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left(a,\infty\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left(a,\infty\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $A=\left[-\infty,a\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(x,y\right):x<y\in\left[-\infty,a\right)\right\} \cup\left\{ \left(x,a\right]:x\in\left[-\infty,a\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $A\subseteq B\subseteq X$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\mathcal{T}_{B}$
+\end_inset
+
+ be the topology induced by 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+ be a topology induced by 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}$
+\end_inset
+
+ the topology induced by 
+\begin_inset Formula $\left(B,\mathcal{T}_{B}\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\mathcal{T}_{B}=\left\{ U\cap B:U\in\mathcal{T}\right\} 
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\mathcal{T}_{1}=\left\{ U\cap A:U\in\mathcal{T}\right\} .
+\]
+
+\end_inset
+
+Now notice that 
+\begin_inset Formula 
+\[
+\mathcal{T}_{2}=\left\{ V\cap A:V\in\mathcal{T}_{B}\right\} =\left\{ \left(U\cap B\right)\cap A:U\in\mathcal{T}\right\} =\left\{ U\cap A:U\in\mathcal{T}\right\} =\mathcal{T}_{1}
+\]
+
+\end_inset
+
+ for 
+\begin_inset Formula $B\cap A=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ be the topological space with the topology induced by 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $U$
+\end_inset
+
+ is open in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ if is of the form 
+\begin_inset Formula $U=B\cap Y$
+\end_inset
+
+ for some 
+\begin_inset Formula $B\in\mathcal{T}$
+\end_inset
+
+.
+ It follows that the set 
+\begin_inset Formula $Y\setminus U$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ Assume 
+\begin_inset Formula $Z=A\cap Y$
+\end_inset
+
+ for some closed set 
+\begin_inset Formula $A\subseteq X$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is closed then 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ is open in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Thus a
+\begin_inset Formula 
+\[
+U=\left(X\setminus A\right)\cap Y=Y\setminus A
+\]
+
+\end_inset
+
+is open in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ As such
+\begin_inset Formula 
+\[
+Y\setminus U=Y\setminus\left(Y\setminus A\right)=A\cap Y=Z
+\]
+
+\end_inset
+
+which is closed in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ Now assume that 
+\begin_inset Formula $Z$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ Then take 
+\begin_inset Formula $Z=Y\setminus U$
+\end_inset
+
+ for some 
+\begin_inset Formula $U=B\cap Y\in\mathcal{T}_{Y}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+Y\setminus Z=Y\setminus\left(B\cap Y\right)=Y\setminus B=\left(X\setminus B\right)\cap Y.
+\]
+
+\end_inset
+
+Because 
+\begin_inset Formula $B\in\mathcal{T}$
+\end_inset
+
+, we concluse that 
+\begin_inset Formula $X\setminus B=A$
+\end_inset
+
+ for some closed set 
+\begin_inset Formula $A$
+\end_inset
+
+, which concludes the proof.
+\end_layout
+
+\begin_layout SmartQuestion
+A topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is discrete if it includes all singular subsets of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+.
+ Then for any 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ we have that 
+\begin_inset Formula $\left\{ y\right\} =\left\{ y\right\} \cap Y$
+\end_inset
+
+.
+ So the induced topology on 
+\begin_inset Formula $Y$
+\end_inset
+
+ is the discrete one.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space with the indiscrete topology and 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\[
+\mathcal{T}_{Y}=\left\{ X\cap Y,\emptyset\cap Y\right\} =\left\{ Y,\emptyset\right\} 
+\]
+
+\end_inset
+
+and it follows that the induced topology on 
+\begin_inset Formula $Y$
+\end_inset
+
+ is the indiscrete topology.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $Y=\left[0,1\right]\cup\left[3,4\right]$
+\end_inset
+
+.
+ Then we have that for 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ sets of the form 
+\begin_inset Formula $\left(-1,x\right)\cap Y=\left[0,x\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(x,2\right)\cap Y=\left(x,1\right]$
+\end_inset
+
+ are open.
+ Notice that
+\begin_inset Formula 
+\[
+Y\setminus\left[0,x\right)=\left(x,1\right]\cup\left[3,4\right]
+\]
+
+\end_inset
+
+is the union of open sets and therefore open in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ As such any set of the form 
+\begin_inset Formula $\left[0,x\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ is clopen in 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+No.
+ Notice the example in (8).
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ be a topological subspace of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $Y\in\mathcal{T}$
+\end_inset
+
+.
+ Then for all 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+ the intersection 
+\begin_inset Formula $A\cap Y$
+\end_inset
+
+ is open, and hence any open set in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ is open in 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\mathcal{T}_{Y}\subseteq\mathcal{T}$
+\end_inset
+
+.
+ Now suppose that 
+\begin_inset Formula $Y\notin\mathcal{T}$
+\end_inset
+
+.
+ To show that 
+\begin_inset Formula $\mathcal{T}_{Y}\nsubseteq\mathcal{T}$
+\end_inset
+
+ we provide a counterexample.
+ Consider 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology and 
+\begin_inset Formula $Y=\left[0,1\right]$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $Y=Y\cap Y$
+\end_inset
+
+ is open in 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ but not in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A,B$
+\end_inset
+
+ be connected subspaces of a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\cap B\neq0$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $A,B\subseteq A\cup B$
+\end_inset
+
+ then the induced topology on by 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ on either is the same as the topology induced by 
+\begin_inset Formula $\mathcal{T}_{A\cup B}$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $K\in\mathcal{T}_{A\cup B}$
+\end_inset
+
+ is a proper clopen set.
+ Then
+\begin_inset Formula 
+\[
+\left(A\cup B\right)\setminus K=\left(A\setminus K\right)\cup\left(B\setminus K\right)
+\]
+
+\end_inset
+
+ is open on 
+\begin_inset Formula $\mathcal{T}_{A\cup B}$
+\end_inset
+
+.
+ As such,
+\begin_inset Formula 
+\[
+\left[\left(A\setminus K\right)\cup\left(B\setminus K\right)\right]\cap A=\left[A\setminus K\right]\cup\left[\left(B\setminus K\right)\cap A\right]=\left[A\setminus K\right]\cup\left[\left(A\cap B\right)\setminus K\right]=A\setminus K
+\]
+
+\end_inset
+
+ is open on 
+\begin_inset Formula $\mathcal{T}_{A}$
+\end_inset
+
+.
+ But
+\begin_inset Formula 
+\[
+A\setminus\left(A\setminus K\right)=K\cap A
+\]
+
+\end_inset
+
+is open in 
+\begin_inset Formula $\mathcal{T}_{A}$
+\end_inset
+
+.
+ Now it remains to check when is 
+\begin_inset Formula $K\cap A$
+\end_inset
+
+ proper.
+ We have that 
+\begin_inset Formula $K\cap A=\emptyset$
+\end_inset
+
+ then 
+\begin_inset Formula $K\cap B\neq0$
+\end_inset
+
+.
+ But the same argument applies to 
+\begin_inset Formula $\mathcal{T}_{B}$
+\end_inset
+
+, hence the only way to have empty unions with both 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ is to have 
+\begin_inset Formula $K=\emptyset$
+\end_inset
+
+.
+ Now suppose that 
+\begin_inset Formula $K\cap A=A$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $K=A\cup C$
+\end_inset
+
+ for some 
+\begin_inset Formula $C\subset B$
+\end_inset
+
+, which provides a proper subset, because 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ is not empty.
+ Thus the only way to avoid a contradiction with the fact that 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are connected is to have that 
+\begin_inset Formula $K=A\cup B$
+\end_inset
+
+ or 
+\begin_inset Formula $K=\emptyset$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ is connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}_{1}\right)$
+\end_inset
+
+ be a topological subspace of a 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Then for all 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ the set 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+.
+ Thus for all 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+\left\{ y\right\} =\left\{ y\right\} \cap Y
+\]
+
+\end_inset
+
+so every singular subset of 
+\begin_inset Formula $Y$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $\left(Y,\mathcal{T}_{1}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology and 
+\begin_inset Formula $x\neq y\in\mathbb{R}$
+\end_inset
+
+.
+ Take 
+\begin_inset Formula $\epsilon=\frac{\left|y-x\right|}{2}$
+\end_inset
+
+.
+ Then for 
+\begin_inset Formula $U=\left(x-\epsilon,x+\epsilon\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $V=\left(y-\epsilon,y+\epsilon\right)$
+\end_inset
+
+ we have that 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in V$
+\end_inset
+
+ but 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the euclidean topology is Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a discrete space and 
+\begin_inset Formula $x\neq y\in X$
+\end_inset
+
+.
+ Then take 
+\begin_inset Formula $U=\left\{ x\right\} \in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $V=\left\{ y\right\} \in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ So every discrete space is Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+By construction, notice that 
+\begin_inset Formula $U$
+\end_inset
+
+ contains 
+\begin_inset Formula $x$
+\end_inset
+
+ but not 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ contains 
+\begin_inset Formula $y$
+\end_inset
+
+ but not 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ As such, if 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{2}$
+\end_inset
+
+, it is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $X=\mathbb{Z}$
+\end_inset
+
+ equiped with the cofinite topology.
+ Then for any 
+\begin_inset Formula $x,y\in\mathbb{Z}$
+\end_inset
+
+ we have that 
+\begin_inset Formula $\mathbb{Z}\setminus\left\{ y\right\} $
+\end_inset
+
+ is an open set that contains 
+\begin_inset Formula $x$
+\end_inset
+
+ but not 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+ But now consider an open set 
+\begin_inset Formula $A$
+\end_inset
+
+ containing 
+\begin_inset Formula $x$
+\end_inset
+
+ but not 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ But any open subset 
+\begin_inset Formula $B$
+\end_inset
+
+ containing 
+\begin_inset Formula $y$
+\end_inset
+
+ but not 
+\begin_inset Formula $x$
+\end_inset
+
+ will intersect 
+\begin_inset Formula $A$
+\end_inset
+
+, for if not, it would not contain an infinity of elements, so its complement
+ would not be closed.
+ As such, 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ with the confinite topology is not Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+ be a topological subspace of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Thus for any 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ there exists 
+\begin_inset Formula $U,V\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in U_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in U_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{x}\cap U_{y}=\emptyset$
+\end_inset
+
+.
+ Then for any 
+\begin_inset Formula $a,b\in Y$
+\end_inset
+
+ we have that 
+\begin_inset Formula $U_{a}\cap Y$
+\end_inset
+
+ and 
+\begin_inset Formula $U_{b}\cap Y$
+\end_inset
+
+ are open in 
+\begin_inset Formula $\mathcal{T}_{Y}$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\left(U_{a}\cap Y\right)\cap\left(U_{B}\cap Y\right)=\left(U_{a}\cap U_{b}\right)\cap Y=\emptyset.
+\]
+
+\end_inset
+
+Hence a subspace of an Hausdorff space is Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+Assume 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is an Hausdorff door space.
+ Let 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ be distinct limits points.
+ Because 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is Hausdorff we have 
+\begin_inset Formula $U,V\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in V$
+\end_inset
+
+, but 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Now consider 
+\begin_inset Formula $A=\left(U\setminus\left\{ x\right\} \right)\cup\left\{ y\right\} $
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ contains 
+\begin_inset Formula $y$
+\end_inset
+
+ but no other elements of 
+\begin_inset Formula $V$
+\end_inset
+
+, so is not open, otherwise 
+\begin_inset Formula $y$
+\end_inset
+
+ would not be a limit point.
+ Additionally 
+\begin_inset Formula $X\setminus A$
+\end_inset
+
+ contains 
+\begin_inset Formula $x$
+\end_inset
+
+ but no other elements of 
+\begin_inset Formula $U$
+\end_inset
+
+, so 
+\begin_inset Formula $x$
+\end_inset
+
+ being a limit point implies that 
+\begin_inset Formula $A$
+\end_inset
+
+ is not closed.
+ Hence 
+\begin_inset Formula $A$
+\end_inset
+
+ is neither open nor closed, which contradict the assumption that 
+\begin_inset Formula $x,y$
+\end_inset
+
+ are two distinct limits points.
+\begin_inset Newline newline
+\end_inset
+
+Now assume that 
+\begin_inset Formula $y$
+\end_inset
+
+ is not a limit point of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then there exists some open neighborhood 
+\begin_inset Formula $K\subseteq K$
+\end_inset
+
+ such that 
+\begin_inset Formula $K\cap X=\left\{ y\right\} $
+\end_inset
+
+.
+ But this implies that 
+\begin_inset Formula $K=\left\{ y\right\} $
+\end_inset
+
+, so 
+\begin_inset Formula $\left\{ y\right\} $
+\end_inset
+
+ is open in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}_{1}\right)$
+\end_inset
+
+ be a topological subspace of a 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+ space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Suppose that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is second countable, then there exists a countable basis 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+ that generates 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ We want to show that
+\begin_inset Formula 
+\[
+\mathcal{B}_{1}=\left\{ B_{i}\cap Y:B_{i}\in\mathcal{B}\right\} 
+\]
+
+\end_inset
+
+is a countable basis of 
+\begin_inset Formula $\left(Y,\mathcal{T}_{1}\right)$
+\end_inset
+
+.
+ Obviously 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ is countable and generates 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $A,B\in\mathcal{B}_{1}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+A\cap B=\left(B_{i}\cap Y\right)\cap\left(B_{j}\cap Y\right)=\left(B_{i}\cap B_{j}\right)\cap Y
+\]
+
+\end_inset
+
+is the union of elements of 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+.
+ Finally, let 
+\begin_inset Formula $A\in\mathcal{T}_{Y}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $A=\bigcup_{i\in I}B_{i}$
+\end_inset
+
+ for a family of basis elements 
+\begin_inset Formula $B_{i}\in\mathcal{B}$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+A\cap Y=\left(\bigcup_{i\in I}B_{i}\right)\cap Y=\bigcup_{i\in I}\left(B_{i}\cap Y\right),
+\]
+
+\end_inset
+
+that is, the topology generated by 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ is the induced topology on 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ We conclude 
+\begin_inset Formula $\mathcal{B}_{1}$
+\end_inset
+
+ is a countable basis of 
+\begin_inset Formula $\left(Y,\mathcal{T}_{1}\right)$
+\end_inset
+
+, so the subspace is second countable.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $a<b\in\mathbb{R}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $A=\left[a,b\right]$
+\end_inset
+
+.
+ Suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is not connected.
+ Then there exists a proper clopen subset 
+\begin_inset Formula $K\in\mathcal{T}_{A}$
+\end_inset
+
+.
+ The proper open sets of 
+\begin_inset Formula $A$
+\end_inset
+
+ are of the form 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left[x,y\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left(x,y\right]$
+\end_inset
+
+, for 
+\begin_inset Formula $x<y\in\left[a,b\right]$
+\end_inset
+
+.
+ Without loss of generality, suppose that 
+\begin_inset Formula $K$
+\end_inset
+
+ is of the form 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+ or 
+\begin_inset Formula $\left[x,y\right)$
+\end_inset
+
+.
+ There exist 
+\begin_inset Formula $c<d\in\left(a,b\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $c\in K$
+\end_inset
+
+ and 
+\begin_inset Formula $d\in A\setminus K$
+\end_inset
+
+.
+ Consider 
+\begin_inset Formula $T=K\cap\left[c,d\right]$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $T$
+\end_inset
+
+ is the intersection of closed sets, therefore closed, and bounded above
+ by d, so it has a supremum 
+\begin_inset Formula $s=\sup\left(T\right)\in T$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $s\in K$
+\end_inset
+
+, so there exists an open interval 
+\begin_inset Formula $\left(e,f\right)\subseteq K$
+\end_inset
+
+ such that 
+\begin_inset Formula $s\in\left(e,f\right)\subseteq K$
+\end_inset
+
+.
+ This suggests that
+\begin_inset Formula 
+\[
+c<s<\min\left(f,d\right)
+\]
+
+\end_inset
+
+which contradicts the assumption that 
+\begin_inset Formula $s$
+\end_inset
+
+ is the supremum of 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ is connected with the usual topology.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ with the usual topology.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+If the usual topology on 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ was the discrete one, then for any 
+\begin_inset Formula $x\in\mathbb{Q}$
+\end_inset
+
+ we would have 
+\begin_inset Formula $\left\{ x\right\} \in\mathcal{T}_{\mathbb{Q}}$
+\end_inset
+
+, so 
+\begin_inset Formula $\left\{ x\right\} =A\cap\mathbb{Q}$
+\end_inset
+
+ for some open set 
+\begin_inset Formula $A\in\mathcal{T}$
+\end_inset
+
+.
+ But because every open set in 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ contains infinitely many rational numbers numbers, this is impossible.
+ As such, the usual topology on 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is not discrete.
+ The argument is analogous for 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+No.
+ Let 
+\begin_inset Formula $A=\left(-\infty,\sqrt{2}\right)\cap\mathbb{Q}$
+\end_inset
+
+.
+ Obviously 
+\begin_inset Formula $A$
+\end_inset
+
+ is open in the usual topology on 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ However
+\begin_inset Formula 
+\[
+\mathbb{Q}\setminus A=\left[\mathbb{R}\setminus\left(-\infty,\sqrt{2}\right)\right]\cap\mathbb{Q}=\left(\sqrt{2},\infty\right)\cap\mathbb{Q}
+\]
+
+\end_inset
+
+ is also open.
+ Thus 
+\begin_inset Formula $A$
+\end_inset
+
+ is a proper clopen set of 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ with the usual topology, thus 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is not connected.
+ The argument is analogous for 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Yes.
+ Take 
+\begin_inset Formula $x<y\in\mathbb{Q}$
+\end_inset
+
+.
+ Then there exists an irrational number 
+\begin_inset Formula $q$
+\end_inset
+
+ such that 
+\begin_inset Formula $x<q<y$
+\end_inset
+
+.
+ Now take 
+\begin_inset Formula $U=\left(-\infty,q\right)\cap\mathbb{Q}$
+\end_inset
+
+ and 
+\begin_inset Formula $V=\left(q,\infty\right)\cap\mathbb{Q}$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula $x\in U\in\mathcal{T}_{\mathbb{Q}}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in V\in\mathcal{T}_{\mathbb{Q}}$
+\end_inset
+
+ but 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are arbitrary, it follows that 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ with the usual topology is Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+No.
+ Let 
+\begin_inset Formula $A=\mathbb{Z}\subset\mathbb{Q}$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula 
+\[
+\mathbb{Q}\setminus A=\left(\mathbb{R}\setminus A\right)\cap\mathbb{Q}=\left[\bigcup_{n\in\mathbb{Z}}\left(n,n+1\right)\right]\cap\mathbb{Q}
+\]
+
+\end_inset
+
+is open, hence 
+\begin_inset Formula $A$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ with the usual topology.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is infinite, it follows that the induced topology is not the cofinite topology.
+ The argument is analogous for 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+, taking 
+\begin_inset Formula $A=\mathbb{Z}\left(\sqrt{2}\right)$
+\end_inset
+
+, for example.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space, and 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Suppose 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is regular.
+ Let 
+\begin_inset Formula $C$
+\end_inset
+
+ be a closed set of 
+\begin_inset Formula $\left(Y,\mathcal{T}_{Y}\right)$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $C=F\cap Y$
+\end_inset
+
+ for some closed set 
+\begin_inset Formula $A$
+\end_inset
+
+ of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ From regularity we have that for all 
+\begin_inset Formula $y\in Y$
+\end_inset
+
+ there exists a closed set 
+\begin_inset Formula $U,V\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $F\subseteq V$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in U$
+\end_inset
+
+ but 
+\begin_inset Formula $V\cap U=\emptyset$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $C\subseteq V\cap Y$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in U\cap Y$
+\end_inset
+
+, so 
+\begin_inset Formula $\left(V\cap U\right)\cap Y=\emptyset$
+\end_inset
+
+.
+ Hence the subspace is also regular.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a closed set of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the usual topology and 
+\begin_inset Formula $x\in\mathbb{R}\setminus A$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $A$
+\end_inset
+
+ is closed, it is the union of closed intervals.
+ Let it be of the form 
+\begin_inset Formula $A=\bigcup_{i\in I}B_{i}=\bigcup_{i\in I}\left[b_{i},c_{i}\right]$
+\end_inset
+
+.
+ Then let 
+\begin_inset Formula $\epsilon=\min\left(c_{i},b_{i+1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta=\min\left(\left|b_{i}-x\right|,\left|c_{i}-x\right|\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $i\in I$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\sigma=\min\left(\delta,\epsilon\right)$
+\end_inset
+
+.
+ We have thus that 
+\begin_inset Formula $A=\bigcup_{i\in I}B_{i}\subseteq\bigcup_{i\in I}\left(b_{i}-\sigma,c_{i}+\sigma\right)=V\in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $x\notin V$
+\end_inset
+
+.
+ Additionally 
+\begin_inset Formula $x\in\left(x-\sigma,x+\sigma\right)\in\mathcal{T}$
+\end_inset
+
+ and 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ We conclude that 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ is regular with the euclidean topology.
+ The argument for 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ is analogous.
+ Now 
+\begin_inset Formula $\mathbb{Q},\mathbb{I}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ are subspaces of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, so like we proved in (a), are regular.
+\end_layout
+
+\begin_layout SmartQuestion
+Suppose that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is regular and 
+\begin_inset Formula $\mathrm{T}_{1}$
+\end_inset
+
+.
+ For all 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ we have that 
+\begin_inset Formula $\left\{ x\right\} $
+\end_inset
+
+ is closed.
+ As such, there exists 
+\begin_inset Formula $U,V\in\mathcal{T}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left\{ x\right\} \subseteq V$
+\end_inset
+
+, 
+\begin_inset Formula $y\in U$
+\end_inset
+
+ for any 
+\begin_inset Formula $y\in X\setminus\left\{ x\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Thus for any distinct 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ we have disjoint open sets 
+\begin_inset Formula $U,V$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The open sets in the Sorgenfrey line are of the form 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula $b\in\mathbb{Q}$
+\end_inset
+
+ such that 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Then the closed sets are the union of sets of the form 
+\begin_inset Formula $B=\left(a,b\right]$
+\end_inset
+
+.
+ By an argument similar to what used in (a), we have that 
+\begin_inset Formula $B\subseteq\left[a-q,b+q\right)=V$
+\end_inset
+
+ for some small 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+ such that for any 
+\begin_inset Formula $x\in\left(x-q,x+q\right)=U$
+\end_inset
+
+ we have an empty intersection 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Thus the Sorgenfrey line is regular.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a closed subset of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+S=\left\{ \frac{1}{n}:n\in\mathbb{N}\right\} .
+\]
+
+\end_inset
+
+Consider 
+\begin_inset Formula $C=A\cup T$
+\end_inset
+
+ for some subset 
+\begin_inset Formula $T\subseteq S$
+\end_inset
+
+.
+ Let us have a topology 
+\begin_inset Formula 
+\[
+\mathcal{T}=\left\{ C\,\text{ is closed}:T\subseteq S\right\} .
+\]
+
+\end_inset
+
+Start by noticing that if 
+\begin_inset Formula $A\cap\left[0,1\right]=\emptyset\Rightarrow C=\emptyset$
+\end_inset
+
+.
+ Thus we are interested in the case of 
+\begin_inset Formula $A\subseteq\left[0,1\right]$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A=\bigcup_{i\in I}\left[b_{i},c_{i}\right]$
+\end_inset
+
+ for 
+\begin_inset Formula $b_{i}<c_{i}\in\left[0,1\right]$
+\end_inset
+
+ for a family of indices 
+\begin_inset Formula $i\in I$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+C=\bigcup_{i\in I}\left[b_{i},c_{i}\right]\cap T=\bigcup_{n_{i}\in I}\left\{ \frac{1}{n_{i}}\right\} 
+\]
+
+\end_inset
+
+for a family of 
+\begin_inset Formula $n_{i}\in\mathbb{N}$
+\end_inset
+
+.
+ The open sets are then of the form
+\begin_inset Formula 
+\[
+O=\left(-\infty,0\right)\cup\left[\bigcup_{n_{i}\in I}\left(\frac{1}{n_{i+1}},\frac{1}{n_{i-1}}\right)\right]\cup\left(1,\infty\right).
+\]
+
+\end_inset
+
+Now consider 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $x,y\notin\left[0,1\right]$
+\end_inset
+
+ the case is trivial.
+ Suppose then that 
+\begin_inset Formula $x,y\in\left[0,1\right]$
+\end_inset
+
+.
+ Then they exist 
+\begin_inset Formula $n,m$
+\end_inset
+
+ such that 
+\begin_inset Formula 
+\[
+\begin{cases}
+\frac{1}{n+1}<x<\frac{1}{n}\\
+\frac{1}{m+1}<y<\frac{1}{m}
+\end{cases}.
+\]
+
+\end_inset
+
+Defining 
+\begin_inset Formula $\epsilon_{1}=\min\left(\frac{1}{n+1},\left|x-y\right|\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\epsilon_{2}=\min\left(\frac{1}{m+1},\left|x-y\right|\right)$
+\end_inset
+
+ we have found open sets 
+\begin_inset Formula $U=\left(x-\epsilon_{1},x+\epsilon_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $V=\left(y-\epsilon_{2},y+\epsilon_{2}\right)$
+\end_inset
+
+ such that only one point is contained in each and 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Therefore the space is Hausdorff.
+ However, if you consider 
+\begin_inset Formula $A=S$
+\end_inset
+
+ and 
+\begin_inset Formula $z=0$
+\end_inset
+
+, we find that any open neighborhood of 
+\begin_inset Formula $z$
+\end_inset
+
+ contains a point of the form 
+\begin_inset Formula $x=\frac{1}{n}$
+\end_inset
+
+.
+ Thus the space is not regular.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
