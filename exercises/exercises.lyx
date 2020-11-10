@@ -12282,33 +12282,2090 @@ Let
 \end_inset
 
 .
+ Suppose that 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+ is not connected.
+ Then there exist 
+\begin_inset Formula $U,V\in\mathcal{T}$
+\end_inset
+
+ both clopen and nonempty such that 
+\begin_inset Formula $U\cap V=\emptyset$
+\end_inset
+
+.
+ Pick 
+\begin_inset Formula $x\in U$
+\end_inset
+
+ and 
+\begin_inset Formula $y\in V$
+\end_inset
+
+.
+ By definition of adhence of a set, for any open set 
+\begin_inset Formula $K$
+\end_inset
+
+ containing 
+\begin_inset Formula $a\in\overline{A}$
+\end_inset
+
+, then 
+\begin_inset Formula $K\cap A\neq\emptyset$
+\end_inset
+
+.
+ As such, we have that 
+\begin_inset Formula $U\cap A\neq\emptyset=V\cap A$
+\end_inset
+
+, which is a contradiction, as 
+\begin_inset Formula $U\cap A$
+\end_inset
+
+ and 
+\begin_inset Formula $U\cap V$
+\end_inset
+
+ are open in 
+\begin_inset Formula $A$
+\end_inset
+
+ and split it.
+ Hence 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+ is connected.
+\begin_inset Newline newline
+\end_inset
+
+Now let 
+\begin_inset Formula $A\subseteq B\subseteq\overline{A}$
+\end_inset
+
+.
+ Suppose 
+\begin_inset Formula $B$
+\end_inset
+
+ is not connected.
+ Then there exists some clopen set 
+\begin_inset Formula $C\in B$
+\end_inset
+
+.
+ But 
+\begin_inset Formula $B\subseteq\overline{A}$
+\end_inset
+
+, so for open neighborhood 
+\begin_inset Formula $T$
+\end_inset
+
+ of a point 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ we have that 
+\begin_inset Formula $T\cap A\neq\emptyset$
+\end_inset
+
+.
+ As such, on the induced topology on 
+\begin_inset Formula $A$
+\end_inset
+
+, it follows that 
+\begin_inset Formula $T\cap A$
+\end_inset
+
+ is clopen, so 
+\begin_inset Formula $T\cap A=T$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $b$
+\end_inset
+
+ is arbitrary, it follows that 
+\begin_inset Formula $T=B$
+\end_inset
+
+, that is, 
+\begin_inset Formula $B$
+\end_inset
+
+ is connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $Y=\left\{ \left(x,y\right)\in\mathbb{R}^{2}:y=\sin\left(\frac{1}{x}\right),0<x\leq1\right\} $
+\end_inset
+
+ as a subspace of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(a_{1},b_{1}\right)\neq\left(a_{2},b_{2}\right)\in Y$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{align*}
+\psi:\left[0,1\right] & \longrightarrow\mathbb{R}^{2}\\
+t & \longmapsto\left(a_{1}+t\left(a_{2}-a_{1}\right),\sin\left[\frac{1}{a_{1}+t\left(a_{2}-a_{1}\right)}\right]\right)
+\end{align*}
+
+\end_inset
+
+is such that 
+\begin_inset Formula $\psi\left(\left[0,1\right]\right)\subseteq Y$
+\end_inset
+
+, 
+\begin_inset Formula $\psi\left(0\right)=\left(a_{1},\sin\left(\frac{1}{a_{1}}\right)\right)=\left(a_{1},b_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\left(1\right)=\left(a_{2},b_{2}\right)$
+\end_inset
+
+.
+ Noticing that 
+\begin_inset Formula $\psi$
+\end_inset
+
+ is continuous and the points are arbitrary, we conclude that 
+\begin_inset Formula $Y$
+\end_inset
+
+ is path-connected and therefore connected.
+\end_layout
+
+\begin_layout SmartQuestion
+It suffices to show that 
+\begin_inset Formula $A=\left\{ \left(0,y\right)\in\mathbb{R}^{2}:-1\leq0\le1\right\} =Y'$
+\end_inset
+
+.
+ Consider an open interval 
+\begin_inset Formula $U=\left(0-\epsilon,0+\epsilon\right)\times\left(-1,1\right)$
+\end_inset
+
+.
+ Then for some 
+\begin_inset Formula $t>\frac{1}{\epsilon}$
+\end_inset
+
+ there exists a point 
+\begin_inset Formula $p\in Y$
+\end_inset
+
+ such that 
+\begin_inset Formula $p\in U$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $U\subseteq\overline{Y}$
+\end_inset
+
+ and thus 
+\begin_inset Formula $\overline{U}\subseteq\overline{Y}$
+\end_inset
+
+.
+ Noticing that 
+\begin_inset Formula $Y\cup A$
+\end_inset
+
+ is closed, we have that 
+\begin_inset Formula $\overline{Y}=A\cup Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+Direct application of (5).
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\in\mathbb{R}^{2}\setminus E$
+\end_inset
+
+ be distinct points.
+ Then consider the paths
+\begin_inset Formula 
+\begin{align*}
+\psi_{1}:\left[0,1/2\right] & \longrightarrow\left(\mathbb{R}\setminus\mathbb{I}\right)^{2}\\
+t & \longmapsto\left(x_{1},y_{1}+2t\left(y_{2}-y_{1}\right)\right)
+\end{align*}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{align*}
+\psi_{2}:\left[0,1/2\right] & \longrightarrow\left(\mathbb{R}\setminus\mathbb{I}\right)^{2}\\
+t & \longmapsto\left(x_{1}+2t\left(x_{2}-x_{1}\right),y_{2}\right).
+\end{align*}
+
+\end_inset
+
+Obviously both are continuous therefore 
+\begin_inset Formula $\psi_{2}\circ\psi_{1}$
+\end_inset
+
+ is a path connecting both points such that at least one coordinate is always
+ irrational.
+ So 
+\begin_inset Formula $\mathbb{R}^{2}\setminus E$
+\end_inset
+
+ is path-connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\in\mathbb{R}^{2}\setminus C$
+\end_inset
+
+ be distinct points.
+ Then there exist uncoutably many poins of the form
+\begin_inset Formula 
+\[
+z=\left(\frac{x_{1}+x_{2}}{2},z_{2}\right)
+\]
+
+\end_inset
+
+that may be intersected by a path connecting 
+\begin_inset Formula $\left(x_{1},y_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(x_{2},y_{2}\right)$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $C$
+\end_inset
+
+ is countable, not all the straight lines 
+\begin_inset Formula $\left(x_{1},y_{1}\right)\rightarrow z\rightarrow\left(x_{2},y_{2}\right)$
+\end_inset
+
+ intersect 
+\begin_inset Formula $C$
+\end_inset
+
+, as there are uncoutably many.
+ Thus parametrizing this path we conclude that the space is path-connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ a point.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $C_{X}\left(a\right)$
+\end_inset
+
+ be the union of all connected subsets 
+\begin_inset Formula $Y_{i}\subseteq X$
+\end_inset
+
+ such that 
+\begin_inset Formula $a\in Y$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula $\bigcap_{i\in I}Y_{i}\neq\emptyset$
+\end_inset
+
+ as all contain 
+\begin_inset Formula $a$
+\end_inset
+
+, so by (4), the union is connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $K\subseteq X$
+\end_inset
+
+ be the largest connected set containing 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $K$
+\end_inset
+
+ is a connected subset containing 
+\begin_inset Formula $a$
+\end_inset
+
+ so 
+\begin_inset Formula $K\subseteq C_{X}\left(a\right)$
+\end_inset
+
+.
+ Therefore 
+\begin_inset Formula $C_{X}\left(a\right)$
+\end_inset
+
+ is the largest connected set containing 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have that 
+\begin_inset Formula $\overline{C_{X}\left(a\right)}$
+\end_inset
+
+ is connected by (5).
+ But 
+\begin_inset Formula $C_{X}\left(a\right)$
+\end_inset
+
+ is the largest connected subset containing 
+\begin_inset Formula $a$
+\end_inset
+
+, thus 
+\begin_inset Formula $\overline{C_{X}\left(a\right)}=C_{X}\left(a\right)$
+\end_inset
+
+, meaning 
+\begin_inset Formula $C_{X}\left(a\right)$
+\end_inset
+
+ is closed in 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ .
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+If every nonempty connected subset is a singleton set, then for any 
+\begin_inset Formula $a\in X$
+\end_inset
+
+, have 
+\begin_inset Formula $C_{X}\left(a\right)=\left\{ a\right\} $
+\end_inset
+
+.
+ The connected component of 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ is the biggest connect subset containing 
+\begin_inset Formula $\left\{ a\right\} $
+\end_inset
+
+, so if it were different, we would have a contradiction.
+\end_layout
+
+\begin_layout SmartQuestion
+The usual topology on 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ is the discrete topology.
+ Every set in the discrete topology is clopen.
+ As such, the only nonempty connected sets are singular sets on each point.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\mathcal{T}=\left\{ X,\emptyset\right\} $
+\end_inset
+
+.
+ Then the set 
+\begin_inset Formula $X$
+\end_inset
+
+ is connected, as the only clopen set is trivial.
+ Thus it is not totally disconnected.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $f:\mathbb{R}\rightarrow\mathbb{Q}$
+\end_inset
+
+ be a continuous map.
+ We have seen that the image of a connected set by a continous map is connected.
+ The only connected subsets of 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ are singleton sets.
+ As such, every such continuous function must be constant.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(Y,\mathcal{T}'\right)$
+\end_inset
+
+ be a subspace of totally disconnected space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+.
+ Assume that 
+\begin_inset Formula $\left(Y,\mathcal{T}'\right)$
+\end_inset
+
+ is not totally disconnected.
+ Then there exists a subset 
+\begin_inset Formula $Z\subseteq Y$
+\end_inset
+
+ that is connected.
+ But 
+\begin_inset Formula $Z\subseteq Y\subseteq X$
+\end_inset
+
+ so 
+\begin_inset Formula $Z$
+\end_inset
+
+ is a connected subset of 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+, which is a contradicion.
+ Hence 
+\begin_inset Formula $\left(Y,\mathcal{T}'\right)$
+\end_inset
+
+ is totally disconnected.
+\end_layout
+
+\begin_layout SmartQuestion
+Analogous to (d).
+\end_layout
+
+\begin_layout SmartQuestion
+Assume there is a connected subspace of the Sorgenfrey line that contains
+ more than one point.
+ We have seen that for a given subset 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ to be connected, it must be an interval.
+ We analyse the cases:
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $\left[a,b\right)=$
+\end_inset
+
+
+\begin_inset Formula $\left[a,c\right)\cup\left[c,b\right)$
+\end_inset
+
+ for some rational 
+\begin_inset Formula $c\in\left[a,b\right)$
+\end_inset
+
+.
+ But as seen before both are open and separate the space.
+ Thus 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ is not a connected subset.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left(a,b\right)=\left(a,c\right)\cup\left[c,b\right)$
+\end_inset
+
+ for some rational 
+\begin_inset Formula $c\in\left[a,b\right)$
+\end_inset
+
+.
+ Both are open and separate the space.
+ Thus 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ is not a connected subset.
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $\left[a,b\right]=\left[a,c\right)\cup\left[c,b\right]$
+\end_inset
+
+ for some rational 
+\begin_inset Formula $c\in\left[a,b\right)$
+\end_inset
+
+.
+ Both are open and separate the space.
+ Thus 
+\begin_inset Formula $\left[a,b\right)$
+\end_inset
+
+ is not a connected subset.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space and 
+\begin_inset Formula $a\in X$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+We define the path-component of 
+\begin_inset Formula $a$
+\end_inset
+
+ in 
+\begin_inset Formula $X$
+\end_inset
+
+ to be the union of all path-connected neighborhoods of 
+\begin_inset Formula $a$
+\end_inset
+
+, and denote it 
+\begin_inset Formula $P_{X}\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+The union of path-connected sets is path-connected.
+ As such, 
+\begin_inset Formula $P_{X}\left(a\right)$
+\end_inset
+
+ is path-connected.
+\end_layout
+
+\begin_layout SmartQuestion
+Suppose that for any 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ there exists a neighborhood 
+\begin_inset Formula $N_{a}$
+\end_inset
+
+ that is path-connected.
+ Because 
+\begin_inset Formula $X=\underbar{\ensuremath{\bigcup_{a\in X}N_{a}}}$
+\end_inset
+
+ it follows by (b) that 
+\begin_inset Formula $P_{X}\left(a\right)=X$
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $P_{X}\left(a\right)$
+\end_inset
+
+ is open and closed.
+\end_layout
+
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ with the usual topology.
  Let 
 \begin_inset Formula $U$
 \end_inset
 
- be a nonempty clopen set in 
-\begin_inset Formula $\overline{A}$
+ be an open set in 
+\begin_inset Formula $\mathbb{R}^{2}$
 \end_inset
 
- with the induced topology.
+.
+ Suppose that 
+\begin_inset Formula $U$
+\end_inset
+
+ is path connected, then it is connected by what was shown before.
+ Now suppose 
+\begin_inset Formula $U$
+\end_inset
+
+ is connected.
+ Then the set of clopen sets of 
+\begin_inset Formula $U$
+\end_inset
+
+ is 
+\begin_inset Formula $\left\{ U,\emptyset\right\} $
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $x\in U$
+\end_inset
+
+.
+ Then we always find a path-connected neighborhood, for exemple, the open
+ ball centered at 
+\begin_inset Formula $x$
+\end_inset
+
+, which is connected by straigh lines.
+ As such, we have that 
+\begin_inset Formula $P_{U}\left(x\right)$
+\end_inset
+
+ is not empty.
+ Because 
+\begin_inset Formula $x$
+\end_inset
+
+ is arbitrary, 
+\begin_inset Formula $P_{U}\left(x\right)$
+\end_inset
+
+ is clopen, by (c), so 
+\begin_inset Formula $P_{U}\left(x\right)=U$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $U$
+\end_inset
+
+ is path-connected.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be subsets of a topological space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ and 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ are connected.
+ Without loss of generality, suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is not connected and, as such, can be separated into 
+\begin_inset Formula $A=U\cup V$
+\end_inset
+
+ for proper nonempty clopen sets 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ Then we have
+\begin_inset Formula 
+\[
+A\cup B=\left(U\cup V\right)\cup B=\left(U\cup B\right)\cup\left(V\cup B\right)
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+A\cap B=\left(U\cup V\right)\cap B=\left(U\cap B\right)\cup\left(V\cap B\right).
+\]
+
+\end_inset
+
+Consider the following cases.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be open.
+ Let 
+\begin_inset Formula $V\cap B$
+\end_inset
+
+ be empty.
+ Then
+\begin_inset Formula 
+\[
+A\cup B=\left(U\cup B\right)\cup V
+\]
+
+\end_inset
+
+and because 
+\begin_inset Formula $\left(U\cup B\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are disjoint nonempty open sets, it follows that 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ is not connected, which is a contradiction.
+ The same argument applies if 
+\begin_inset Formula $U\cap B=\emptyset$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Now if 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $U\cap B\neq\emptyset$
+\end_inset
+
+ and 
+\begin_inset Formula $V\cap B\neq\emptyset$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+A\cap B=\left(U\cap B\right)\cup\left(V\cap B\right)
+\]
+
+\end_inset
+
+is separated into disjoint nonempty sets, and thus is not connected, which
+ is also a contradiction.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ be closed.
+ Then an analogous argument applies, now noticing that we can separate either
+ 
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ or 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ into disjoint nonempty closed sets.
+ But this too implies that one of them is not connected, and as such we
+ reach a contradiction.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a topological space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Consider 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ with the usual topology.
+ Consider the basis 
+\begin_inset Formula 
+\[
+\mathcal{B}=\left\{ \left(a,b\right)\cap\mathbb{Q}:a<b\in\mathbb{I}\right\} .
+\]
+
+\end_inset
+
+It is clear that this is basis for 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ as it is a basis for 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ Then for any 
+\begin_inset Formula $A\in\mathcal{\mathcal{B}}$
+\end_inset
+
+, we have
+\begin_inset Formula 
+\[
+\mathbb{Q}\setminus A=\mathbb{Q}\setminus\left[\left(a,b\right)\cap\mathbb{Q}\right]=\left[\mathbb{\mathbb{R}}\setminus\left(a,b\right)\right]\cap\mathbb{Q}=\left[\mathbb{\mathbb{R}}\setminus\left[a,b\right]\right]\cap\mathbb{Q}
+\]
+
+\end_inset
+
+so every basis element is a clopen set on 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+.
+ The argument for 
+\begin_inset Formula $\mathbb{I}$
+\end_inset
+
+ is analogous, taking 
+\begin_inset Formula $\mathcal{B}=\left\{ \left(a,b\right)\cap\mathbb{Q}:a<b\in\mathbb{Q}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout SmartQuestion
+We have seen that if 
+\begin_inset Formula $K$
+\end_inset
+
+ is a clopen set on 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+, then for 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+K\cap Y
+\]
+
+\end_inset
+
+is a clopen set on 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ In particular, all elements of the induced basis are still clopen, and
+ thus the subspace is zero-dimensional.
+\end_layout
+
+\begin_layout SmartQuestion
+Suppose that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is zero-dimensional and Hausdorff.
+ Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a connected subset of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Then for every 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ there is a clopen neighborhood 
+\begin_inset Formula $N$
+\end_inset
+
+ such that 
+\begin_inset Formula $N\cap A\subset A$
+\end_inset
+
+.
+ We are garanteed this if 
+\begin_inset Formula $\left|A\right|>1$
+\end_inset
+
+ because the space is Hausdorff.
+ But 
+\begin_inset Formula $N\cap A$
+\end_inset
+
+ is clopen, which contradicts the fact that 
+\begin_inset Formula $A$
+\end_inset
+
+ is connected.
+ As such, we conclude that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is totally disconnected.
+\end_layout
+
+\begin_layout SmartQuestion
+The only basis of an indiscrete space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathcal{B}=\left\{ X,\emptyset\right\} $
+\end_inset
+
+, and every element is clopen, so 
+\begin_inset Formula $X$
+\end_inset
+
+ is zero-dimensional.
+\end_layout
+
+\begin_layout SmartQuestion
+Any basis of an discrete space 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ includes all singular sets and every element is clopen, so 
+\begin_inset Formula $X$
+\end_inset
+
+ is zero-dimensional.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ be a zero-dimensional 
+\begin_inset Formula $\mathrm{T}_{0}$
+\end_inset
+
+ space.
+ Then for every pair 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ there exists a basis element 
+\begin_inset Formula $B$
+\end_inset
+
+ such that 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ and not 
+\begin_inset Formula $y$
+\end_inset
+
+, or the reverse.
+ Without loss of generality, assume 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+ Because 
+\begin_inset Formula $B$
+\end_inset
+
+ is closed, 
+\begin_inset Formula $X\setminus B$
+\end_inset
+
+ is an open set containing 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ As such, for every pair 
+\begin_inset Formula $x,y$
+\end_inset
+
+ there exist open sets 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $X\setminus B$
+\end_inset
+
+ such that each contain one of the points and are disjoint.
+ We conclude that 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ is Hausdorff.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $A$
+\end_inset
+
+ be a subspace of 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ with the usual topology.
+ Suppose 
+\begin_inset Formula $A$
+\end_inset
+
+ is totally disconneted.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ contains no intervals, and as such, only singular points.
+ But the topology induced by 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ on a discrete space is the discrete topology, thus every singleton set
+ is clopen.
+ Forming a basis with all the singleton subsets of 
+\begin_inset Formula $A$
+\end_inset
+
+ we have a clopen basis of 
+\begin_inset Formula $A$
+\end_inset
+
+, thus 
+\begin_inset Formula $A$
+\end_inset
+
+ is zero-dimensional.
+\begin_inset Newline newline
+\end_inset
+
+Now suppose that 
+\begin_inset Formula $A$
+\end_inset
+
+ is zero-dimensional.
+ Then 
+\begin_inset Formula $A$
+\end_inset
+
+ admits a clopen basis 
+\begin_inset Formula $\mathcal{B}$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $A$
+\end_inset
+
+ is a union of intervals, then it is continous, and the only clopen sets
+ are 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+, because any intervals contain more then one points and thus there are
+ open sets not generated by 
+\begin_inset Formula $\left\{ A,\emptyset\right\} $
+\end_inset
+
+.
+ As such, 
+\begin_inset Formula $A$
+\end_inset
+
+ must be discrete.
+ The topology on 
+\begin_inset Formula $A$
+\end_inset
+
+ is the discrete one, and as such 
+\begin_inset Formula $A$
+\end_inset
+
+ is totally disconnected.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $f:\left(X,\mathcal{T}\right)\rightarrow\left(Y,\mathcal{T}'\right)$
+\end_inset
+
+ be a map between topological spaces.
+ If 
+\begin_inset Formula $f$
+\end_inset
+
+ is a local homeomorphism, then for every 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ and every open neighborhood 
+\begin_inset Formula $U_{x}$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ is such that 
+\begin_inset Formula $\left.f\right|_{U_{x}}:U_{x}\rightarrow f\left(U_{x}\right)$
+\end_inset
+
+ is a homeomorphism.
+ To show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous, we must show that for all 
+\begin_inset Formula $V\in\mathcal{T}'$
+\end_inset
+
+, we have that 
+\begin_inset Formula $U=f^{-1}\left(V\right)\in\mathcal{T}$
+\end_inset
+
+.
  Take 
+\begin_inset Formula $x\in U$
+\end_inset
+
+.
+ Then for any open neighborhood 
+\begin_inset Formula $U_{x}$
+\end_inset
+
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ we have that 
+\begin_inset Formula $V\cap f\left(U_{x}\right)$
+\end_inset
+
+ is an open neighborhood of 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ By the continuity of 
+\begin_inset Formula $\left.f\right|_{U_{x}}$
+\end_inset
+
+ we have that 
+\begin_inset Formula 
+\[
+\left.f\right|_{U_{x}}^{-1}\left(V\cap f\left(U_{x}\right)\right)=f^{-1}\left(V\right)\cap U_{x}
+\]
+
+\end_inset
+
+ is open and contained in 
+\begin_inset Formula $U$
+\end_inset
+
+.
+ As such, we have that 
+\begin_inset Formula 
+\[
+U=\bigcup_{x\in U}f^{-1}\left(V\right)\cap U_{x}=f^{-1}\left(V\right)
+\]
+
+\end_inset
+
+ is open, so 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+\end_layout
+
+\begin_layout Section
+Metric Spaces
+\end_layout
+
+\begin_layout Subsection
+Metric Spaces
+\end_layout
+
+\begin_layout SmartQuestion
+Let consider the metric 
+\begin_inset Formula $d\left(\left(a_{1},b_{1}\right),\left(a_{2},b_{2}\right)\right)=\left|a_{1}-b_{1}\right|+\left|a_{2}-b_{2}\right|$
+\end_inset
+
+.
+ Then the set 
+\begin_inset Formula 
+\[
+B_{\epsilon}\left(x\right)=\left\{ y\in\mathbb{R}^{2}:d\left(x,y\right)<\epsilon\right\} 
+\]
+
+\end_inset
+
+corresponds to some open geometrical space of 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+, which by the analogous arguments to what was shown before, is an equivalent
+ basis to the euclidean topology.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $d$
+\end_inset
+
+ be a metric a nonempty set 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $e\left(a,b\right)=\min\left\{ 1,d\left(a,b\right)\right\} $
+\end_inset
+
+.
+ Then we check that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+e
+\begin_inset Formula $\left(a,b\right)\geq$
+\end_inset
+
+ because 
+\begin_inset Formula $d\left(a,b\right)\geq0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $e\left(a,b\right)=\min\left\{ 1,d\left(a,b\right)\right\} =\min\left\{ 1,d\left(b,a\right)\right\} =e\left(b,a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $e\left(a,c\right)=\min\left\{ 1,d\left(a,c\right)\right\} \leq\min\left\{ 1,d\left(a,b\right)+d\left(b,c\right)\right\} \leq\min\left\{ 1,d\left(a,b\right)\right\} +\min\left\{ 1,d\left(b,c\right)\right\} $
+\end_inset
+
+ thus we have the triangular inequality 
+\begin_inset Formula $e\left(a,c\right)\leq e\left(a,b\right)+e\left(b,c\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+The metric are clearly equivalent for distances smaller than 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ After that, 
+\begin_inset Formula $e$
+\end_inset
+
+ becomes a metric of squares of side one, which is clearly the union of
+ open balls in the metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ As such, they are equivalent.
+\end_layout
+
+\begin_layout SmartQuestion
+Direct application of (a) and (b).
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Define
+\begin_inset Formula 
+\[
+e\left(a,b\right)=\frac{d\left(a,b\right)}{1+d\left(a,b\right)}.
+\]
+
+\end_inset
+
+We chech that
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+\begin_inset Formula $d\left(a,b\right)\geq0$
+\end_inset
+
+ thus 
+\begin_inset Formula $e\left(a,b\right)\geq0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $d\left(a,b\right)=d\left(b,a\right)$
+\end_inset
+
+ thus 
+\begin_inset Formula $e\left(a,b\right)=e\left(b,a\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout SmartQuestion
+\begin_inset Formula $d\left(a,c\right)\leq d\left(a,b\right)+d\left(b,c\right)$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula 
+\[
+e\left(a,b\right)=\frac{d\left(a,b\right)}{1+d\left(a,b\right)}=1-\frac{1}{d\left(a,b\right)}\leq1
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula 
+\[
+e\left(a,c\right)=\frac{d\left(a,c\right)}{1+d\left(a,c\right)}\leq\frac{d\left(a,b\right)}{1+d\left(a,c\right)}+\frac{d\left(b,c\right)}{1+d\left(a,c\right)}
+\]
+
+\end_inset
+
+and using the tringular inequality again we get
+\begin_inset Formula 
+\[
+e\left(a,c\right)\leq\frac{d\left(a,b\right)}{1+d\left(a,b\right)-d\left(b,c\right)}+\frac{d\left(b,c\right)}{1+d\left(b,c\right)-d\left(a,b\right)}\leq
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\leq\frac{d\left(a,b\right)}{1+d\left(a,b\right)}+\frac{d\left(b,c\right)}{1+d\left(b,c\right)}=e\left(a,b\right)+e\left(b,c\right)
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $e$
+\end_inset
+
+ is a metric.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ be an arbitrary point.
+ Let 
+\begin_inset Formula $B_{\epsilon}\left(x,d\right)$
+\end_inset
+
+ be a ball of radius 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ with the metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\delta=1-\frac{1}{\epsilon}$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $y\in B_{\epsilon}\left(x,d\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $d\left(x,y\right)\leq\epsilon$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+e\left(x,y\right)=1-\frac{1}{d\left(x,y\right)}\leq1-\frac{1}{\epsilon}=\delta
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $B_{\epsilon}\left(x,d\right)\subseteq B_{\delta}\left(x,e\right)$
+\end_inset
+
+.
+ Now let 
+\begin_inset Formula $B_{\epsilon}\left(x,e\right)$
+\end_inset
+
+ be a ball of radius 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ with the metric 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\delta=\frac{1}{1-\epsilon}$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $y\in B_{\epsilon}\left(x,e\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $e\left(x,y\right)\leq\epsilon$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\frac{1}{1-e\left(x,y\right)}\leq\frac{1}{1-\epsilon}=\delta
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $B_{\epsilon}\left(x,e\right)\subseteq B_{\delta}\left(x,d\right)$
+\end_inset
+
+.
+ We conclude the metric are equivalent.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ be metrics on sets 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $d\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)=\max\left\{ d_{1}\left(x_{1},x_{2}\right),d_{2}\left(y_{1},y_{2}\right)\right\} $
+\end_inset
+
+.
+ We show the following 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Both 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ are defined positive thus 
+\begin_inset Formula $d$
+\end_inset
+
+ is defined positive,
+\end_layout
+
+\begin_layout SmartQuestion
+Both 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ are symmetrical thus 
+\begin_inset Formula $d$
+\end_inset
+
+ is symmetrical,
+\end_layout
+
+\begin_layout SmartQuestion
+Notice that 
+\begin_inset Formula $\max\left\{ d_{1}\left(x_{1},x_{3}\right),d_{2}\left(y_{1},y_{3}\right)\right\} \leq\max\left\{ d_{1}\left(x_{1},x_{2}\right)+d_{1}\left(x_{2},x_{3}\right),d_{2}\left(y_{1},y_{2}\right)+d_{2}\left(y_{2},y_{3}\right)\right\} $
+\end_inset
+
+ so the triangular inequality of 
+\begin_inset Formula $d$
+\end_inset
+
+ follows.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $e\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)=d_{1}\left(x_{1},x_{2}\right)+d_{2}\left(y_{1},y_{2}\right)$
+\end_inset
+
+.
+ We show the following 
+\end_layout
+
+\begin_deeper
+\begin_layout SmartQuestion
+Both 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ are defined positive thus 
+\begin_inset Formula $e$
+\end_inset
+
+ is defined positive,
+\end_layout
+
+\begin_layout SmartQuestion
+Both 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ are symmetrical thus 
+\begin_inset Formula $e$
+\end_inset
+
+ is symmetrical,
+\end_layout
+
+\begin_layout SmartQuestion
+Notice that 
+\begin_inset Formula $d_{1}\left(x_{1},x_{3}\right)+d_{2}\left(y_{1},y_{3}\right)\leq\left[d_{1}\left(x_{1},x_{2}\right)+d_{1}\left(x_{2},x_{3}\right)\right]+\left[d_{2}\left(y_{1},y_{2}\right)+d_{2}\left(y_{2},y_{3}\right)\right]$
+\end_inset
+
+ so the triangular inequality of 
+\begin_inset Formula $e$
+\end_inset
+
+ follows.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ be an arbitrary point.
+ Let 
+\begin_inset Formula $B_{\epsilon}\left(\left(x_{1},y_{1}\right),d\right)$
+\end_inset
+
+ be a ball of radius 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ with the metric 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\delta=2\epsilon$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $\left(x_{2},y_{2}\right)\in B_{\epsilon}\left(\left(x_{1},y_{1}\right),d\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $d\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)\leq\epsilon$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+e\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)=d_{1}\left(x_{1},x_{2}\right)+d_{2}\left(y_{1},y_{2}\right)\leq2\max\left\{ d_{1}\left(x_{1},x_{2}\right),d_{2}\left(y_{1},y_{2}\right)\right\} =
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2d\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)<2\epsilon=\delta
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $B_{\epsilon}\left(\left(x_{1},y_{1}\right),d\right)\subseteq B_{\delta}\left(\left(x_{1},y_{1}\right),e\right)$
+\end_inset
+
+.
+ Now let 
+\begin_inset Formula $B_{\epsilon}\left(\left(x_{1},y_{1}\right),e\right)$
+\end_inset
+
+ be a ball of radius 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ with the metric 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\delta=\epsilon$
+\end_inset
+
+.
+ For any 
+\begin_inset Formula $y\in B_{\epsilon}\left(\left(x_{1},y_{1}\right),e\right)$
+\end_inset
+
+ we have 
+\begin_inset Formula $e\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)\leq\epsilon$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+d\left(x,y\right)=\max\left\{ d_{1}\left(x_{1},x_{2}\right),d_{2}\left(y_{1},y_{2}\right)\right\} \leq d_{1}\left(x_{1},x_{2}\right)+d_{2}\left(y_{1},y_{2}\right)=e\left(\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right)\right)<\epsilon=\delta
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $B_{\epsilon}\left(\left(x_{1},y_{1}\right),e\right)\subseteq B_{\delta}\left(\left(x_{1},y_{1}\right),d\right)$
+\end_inset
+
+.
+ We conclude the metric are equivalent.
+\end_layout
+
+\end_deeper
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ the corresponding topology.
+ Let 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ and 
+\begin_inset Formula $f:\left(X,\mathcal{T}\right)\rightarrow\mathbb{R}$
+\end_inset
+
+ be a map.
+ We want to show that 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+ Take 
+\begin_inset Formula $V\in\mathbb{R}$
+\end_inset
+
+ be an open interval of the form 
+\begin_inset Formula $\left(b,c\right)$
+\end_inset
+
+ such that 
+\begin_inset Formula $b<c\in\mathbb{R}$
+\end_inset
+
+.
+ Then the pre-image is
+\begin_inset Formula 
+\[
+U=f^{-1}\left(V\right)=\left\{ x\in X:b<d\left(x,a\right)<c\right\} .
+\]
+
+\end_inset
+
+Let 
 \begin_inset Formula $u\in U$
 \end_inset
 
 .
- Supposes 
-\begin_inset Formula $u\in A$
+ Set 
+\begin_inset Formula $\epsilon=\min\left\{ c-d\left(u,a\right),d\left(u,a\right)-b\right\} $
 \end_inset
 
-, then we have that 
-\begin_inset Formula $U\cap A=A$
+.
+ We find that for any 
+\begin_inset Formula $v\in B_{\epsilon}\left(u\right)$
 \end_inset
 
- otherwise U would be proper nonempty clopen subspace of 
-\begin_inset Formula $A$
+
+\begin_inset Formula 
+\[
+d\left(v,a\right)\leq d\left(v,u\right)+d\left(u,a\right)\Longleftrightarrow d\left(v,a\right)-d\left(u,a\right)\leq d\left(v,u\right)<\epsilon
+\]
+
 \end_inset
 
- and it would not be connected.
+so
+\begin_inset Formula 
+\[
+d\left(v,a\right)-d\left(u,a\right)<c-d\left(u,a\right)\Longleftrightarrow d\left(v,a\right)<c
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+d\left(u,a\right)\leq d\left(u,v\right)+d\left(v,a\right)\Longleftrightarrow d\left(u,a\right)-d\left(v,a\right)\leq d\left(u,v\right)<\epsilon
+\]
+
+\end_inset
+
+so
+\begin_inset Formula 
+\[
+d\left(u,a\right)-d\left(v,a\right)<d\left(u,a\right)-b\Longleftrightarrow d\left(v,a\right)>b
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula $B_{\epsilon}\left(u\right)$
+\end_inset
+
+ is open and 
+\begin_inset Formula $f$
+\end_inset
+
+ is continuous.
+\end_layout
+
+\begin_layout SmartQuestion
+Let 
+\begin_inset Formula $\left(X,d\right)$
+\end_inset
+
+ be a metric space and 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ the corresponding topology.
+ Let 
+\begin_inset Formula $Y\subseteq X$
+\end_inset
+
+ be a subspace with the metric 
+\begin_inset Formula $d_{1}=\left.d\right|_{Y}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\mathcal{T}_{1}$
+\end_inset
+
+ be the topology induced by 
+\begin_inset Formula $\left(X,\mathcal{T}\right)$
+\end_inset
+
+ on 
+\begin_inset Formula $Y$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{2}$
+\end_inset
+
+ be the topology induces by 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ on 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ We have that 
+\begin_inset Formula 
+\[
+\mathcal{B}=\left\{ B_{\epsilon}\left(x\right):x\in X,\epsilon>0\right\} 
+\]
+
+\end_inset
+
+ is a basis of 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\mathcal{B}_{1}=\left\{ B_{i}\cap Y:B_{i}\in\mathcal{B}\right\} $
+\end_inset
+
+ is the induces basis by 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ on 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ But
+\begin_inset Formula 
+\[
+\mathcal{B}_{1}=\left\{ B_{\epsilon}\left(x,d\right)\cap Y:x\in X,\epsilon>0\right\} .
+\]
+
+\end_inset
+
+ Additionally, we have that 
+\begin_inset Formula $d_{1}$
+\end_inset
+
+ induces a basis 
+\begin_inset Formula $\mathcal{B}_{2}$
+\end_inset
+
+ on 
+\begin_inset Formula $Y$
+\end_inset
+
+ of the form
+\begin_inset Formula 
+\[
+\mathcal{B}_{2}=\left\{ B_{\delta}\left(y,d_{1}\right):y\in Y,\delta>0\right\} .
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $B_{\delta}\left(v,d_{1}\right)\in\mathcal{B}_{2}$
+\end_inset
+
+ for some 
+\begin_inset Formula $v\in Y$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Then there exists 
+\begin_inset Formula $B_{\delta}\left(v,d\right)\in B$
+\end_inset
+
+, such that 
+\begin_inset Formula 
+\[
+B_{\delta}\left(v,d\right)\cap Y=B_{\delta}\left(v,d\right)\subseteq B_{\delta}\left(v,d_{1}\right).
+\]
+
+\end_inset
+
+Now let 
+\begin_inset Formula $B_{\epsilon}\left(u,d\right)\in\mathcal{B}$
+\end_inset
+
+ for some 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ Notice that 
+\begin_inset Formula $B_{\epsilon}\left(u,d\right)\cap Y$
+\end_inset
+
+ is open in 
+\begin_inset Formula $Y$
+\end_inset
+
+, so for every 
+\begin_inset Formula $v\in B_{\epsilon}\left(u,d\right)\cap Y$
+\end_inset
+
+ there exists some open ball 
+\begin_inset Formula $B_{\delta}\left(v,d\right)\subseteq B_{\epsilon}\left(u,d\right)\cap Y$
+\end_inset
+
+.
+ But by definition 
+\begin_inset Formula $B_{\delta}\left(v,d\right)=B_{\delta}\left(v,d_{1}\right)\in\mathcal{T}_{2}$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\mathcal{T}_{1}=\mathcal{T}_{2}$
+\end_inset
+
+.
 \end_layout
 
 \end_body
